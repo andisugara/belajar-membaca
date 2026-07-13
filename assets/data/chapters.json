@@ -1,0 +1,129 @@
+[
+  {
+    "id": "chapter_1",
+    "chapter_number": 1,
+    "title": "ba",
+    "description": "Mengenal Abjad digabungkan dengan huruf vokal a",
+    "pages": [
+      {
+        "page_number": 1,
+        "page_audio": "assets/audio/chapters/c1_p1.mp3",
+        "rows": [
+          [
+            { "text": "a ba", "syllables": ["a", " ", "ba"], "audio": "assets/audio/words/a_ba.mp3" }
+          ],
+          [
+            { "text": "a", "syllables": ["a"], "audio": "assets/audio/words/a.mp3" },
+            { "text": "ba", "syllables": ["ba"], "audio": "assets/audio/words/ba.mp3" },
+            { "text": "ba", "syllables": ["ba"], "audio": "assets/audio/words/ba.mp3" }
+          ],
+          [
+            { "text": "aa", "syllables": ["a", "a"], "audio": "assets/audio/words/aa.mp3" },
+            { "text": "aba", "syllables": ["a", "ba"], "audio": "assets/audio/words/aba.mp3" },
+            { "text": "baa", "syllables": ["ba", "a"], "audio": "assets/audio/words/baa.mp3" }
+          ],
+          [
+            { "text": "baba", "syllables": ["ba", "ba"], "audio": "assets/audio/words/baba.mp3" },
+            { "text": "baa", "syllables": ["ba", "a"], "audio": "assets/audio/words/baa.mp3" },
+            { "text": "aba", "syllables": ["a", "ba"], "audio": "assets/audio/words/aba.mp3" }
+          ],
+          [
+            { "text": "aa", "syllables": ["a", "a"], "audio": "assets/audio/words/aa.mp3" },
+            { "text": "ababa", "syllables": ["a", "ba", "ba"], "audio": "assets/audio/words/ababa.mp3" },
+            { "text": "baba", "syllables": ["ba", "ba"], "audio": "assets/audio/words/baba.mp3" }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "page_audio": "assets/audio/chapters/c1_p2.mp3",
+        "rows": [
+          [
+            { "text": "ba ba", "syllables": ["ba", " ", "ba"], "audio": "assets/audio/words/ba_ba.mp3" }
+          ],
+          [
+            { "text": "a", "syllables": ["a"], "audio": "assets/audio/words/a.mp3" },
+            { "text": "ba", "syllables": ["ba"], "audio": "assets/audio/words/ba.mp3" }
+          ],
+          [
+            { "text": "baba", "syllables": ["ba", "ba"], "audio": "assets/audio/words/baba.mp3" },
+            { "text": "aba", "syllables": ["a", "ba"], "audio": "assets/audio/words/aba.mp3" }
+          ],
+          [
+            { "text": "baa", "syllables": ["ba", "a"], "audio": "assets/audio/words/baa.mp3" },
+            { "text": "a", "syllables": ["a"], "audio": "assets/audio/words/a.mp3" }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_2",
+    "chapter_number": 2,
+    "title": "ca",
+    "description": "Mengenal Abjad digabungkan dengan huruf vokal a dan c",
+    "pages": [
+      {
+        "page_number": 1,
+        "page_audio": "assets/audio/chapters/c2_p1.mp3",
+        "rows": [
+          [
+            { "text": "a ca", "syllables": ["a", " ", "ca"], "audio": "assets/audio/words/a_ca.mp3" }
+          ],
+          [
+            { "text": "a", "syllables": ["a"], "audio": "assets/audio/words/a.mp3" },
+            { "text": "ca", "syllables": ["ca"], "audio": "assets/audio/words/ca.mp3" },
+            { "text": "ca", "syllables": ["ca"], "audio": "assets/audio/words/ca.mp3" }
+          ],
+          [
+            { "text": "aa", "syllables": ["a", "a"], "audio": "assets/audio/words/aa.mp3" },
+            { "text": "aca", "syllables": ["a", "ca"], "audio": "assets/audio/words/aca.mp3" },
+            { "text": "caa", "syllables": ["ca", "a"], "audio": "assets/audio/words/caa.mp3" }
+          ],
+          [
+            { "text": "caca", "syllables": ["ca", "ca"], "audio": "assets/audio/words/caca.mp3" },
+            { "text": "caa", "syllables": ["ca", "a"], "audio": "assets/audio/words/caa.mp3" },
+            { "text": "aca", "syllables": ["a", "ca"], "audio": "assets/audio/words/aca.mp3" }
+          ],
+          [
+            { "text": "baca", "syllables": ["ba", "ca"], "audio": "assets/audio/words/baca.mp3" },
+            { "text": "caba", "syllables": ["ca", "ba"], "audio": "assets/audio/words/caba.mp3" },
+            { "text": "acaca", "syllables": ["a", "ca", "ca"], "audio": "assets/audio/words/acaca.mp3" }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_3",
+    "chapter_number": 3,
+    "title": "da",
+    "description": "Mengenal Abjad digabungkan dengan huruf vokal a dan d",
+    "pages": [
+      {
+        "page_number": 1,
+        "page_audio": "assets/audio/chapters/c3_p1.mp3",
+        "rows": [
+          [
+            { "text": "a da", "syllables": ["a", " ", "da"], "audio": "assets/audio/words/a_da.mp3" }
+          ],
+          [
+            { "text": "a", "syllables": ["a"], "audio": "assets/audio/words/a.mp3" },
+            { "text": "da", "syllables": ["da"], "audio": "assets/audio/words/da.mp3" },
+            { "text": "da", "syllables": ["da"], "audio": "assets/audio/words/da.mp3" }
+          ],
+          [
+            { "text": "ada", "syllables": ["a", "da"], "audio": "assets/audio/words/ada.mp3" },
+            { "text": "dada", "syllables": ["da", "da"], "audio": "assets/audio/words/dada.mp3" },
+            { "text": "daa", "syllables": ["da", "a"], "audio": "assets/audio/words/daa.mp3" }
+          ],
+          [
+            { "text": "bada", "syllables": ["ba", "da"], "audio": "assets/audio/words/bada.mp3" },
+            { "text": "cada", "syllables": ["ca", "da"], "audio": "assets/audio/words/cada.mp3" },
+            { "text": "adada", "syllables": ["a", "da", "da"], "audio": "assets/audio/words/adada.mp3" }
+          ]
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "q1",
+    "instruction": "Dengarkan suara ini, lalu tebak kata yang tepat!",
+    "audio": "assets/audio/quiz/q_baba.mp3",
+    "options": [
+      { "text": "aba", "is_correct": false },
+      { "text": "baba", "is_correct": true },
+      { "text": "baa", "is_correct": false }
+    ]
+  },
+  {
+    "id": "q2",
+    "instruction": "Dengarkan suara ini, lalu tebak kata yang tepat!",
+    "audio": "assets/audio/quiz/q_baca.mp3",
+    "options": [
+      { "text": "caca", "is_correct": false },
+      { "text": "baca", "is_correct": true },
+      { "text": "aba", "is_correct": false }
+    ]
+  },
+  {
+    "id": "q3",
+    "instruction": "Dengarkan suara ini, lalu tebak kata yang tepat!",
+    "audio": "assets/audio/quiz/q_ada.mp3",
+    "options": [
+      { "text": "dada", "is_correct": false },
+      { "text": "ada", "is_correct": true },
+      { "text": "da", "is_correct": false }
+    ]
+  },
+  {
+    "id": "q4",
+    "instruction": "Dengarkan suara ini, lalu tebak kata yang tepat!",
+    "audio": "assets/audio/quiz/q_ababa.mp3",
+    "options": [
+      { "text": "ababa", "is_correct": true },
+      { "text": "baba", "is_correct": false },
+      { "text": "aba", "is_correct": false }
+    ]
+  }
+]
