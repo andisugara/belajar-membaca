@@ -293,15 +293,15 @@ class _ReadingScreenState extends State<ReadingScreen> {
                           padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
                           child: Center(
                             child: SingleChildScrollView(
-                              padding: const EdgeInsets.symmetric(vertical: 16.0),
+                              padding: const EdgeInsets.only(top: 2.0, bottom: 8.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 children: List.generate(pageItem.page.rows.length, (r) {
                                   final row = pageItem.page.rows[r];
-                                  final isFirstRow = r == 0;
+                                  final isTitleRow = (r == 0) && (pageItem.pageIndexInChapter == 0);
                                   
                                   return Padding(
-                                    padding: EdgeInsets.symmetric(vertical: isFirstRow ? 12.0 : 6.0),
+                                    padding: EdgeInsets.symmetric(vertical: isTitleRow ? 8.0 : 3.0),
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: List.generate(row.length, (c) {
@@ -309,7 +309,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
                                         
                                         return WordBubble(
                                           item: word,
-                                          fontSize: isFirstRow ? titleFontSize : gridFontSize,
+                                          fontSize: isTitleRow ? titleFontSize : gridFontSize,
                                           isHighlighted: false,
                                           onTap: () {
                                             if (!_isMuted) {

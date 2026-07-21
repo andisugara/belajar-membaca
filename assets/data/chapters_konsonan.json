@@ -7,71 +7,69 @@
     "pages": [
       {
         "page_number": 1,
-        "page_audio": "assets/audio/chapters/c1_p1.mp3",
         "rows": [
           [
-            { "text": "a-ah", "syllables": ["a", "-", "ah"], "colors": ["red", "dark", "red"], "audio": "assets/audio/words/a_ah.mp3" }
+            { "text": "a-ah", "syllables": ["a", "-", "ah"], "colors": ["red", "dark", "red"] }
           ],
           [
-            { "text": "ma", "syllables": ["ma"], "colors": ["red"], "audio": "assets/audio/words/ma.mp3" },
-            { "text": "mah", "syllables": ["mah"], "colors": ["dark"], "audio": "assets/audio/words/mah.mp3" },
-            { "text": "rumah", "syllables": ["ru", "mah"], "colors": ["red", "dark"], "audio": "assets/audio/words/rumah.mp3" }
+            { "text": "ma", "syllables": ["ma"], "colors": ["red"] },
+            { "text": "mah", "syllables": ["mah"], "colors": ["dark"] },
+            { "text": "rumah", "syllables": ["ru", "mah"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "wa", "syllables": ["wa"], "colors": ["red"], "audio": "assets/audio/words/wa.mp3" },
-            { "text": "wah", "syllables": ["wah"], "colors": ["dark"], "audio": "assets/audio/words/wah.mp3" },
-            { "text": "sawah", "syllables": ["sa", "wah"], "colors": ["red", "dark"], "audio": "assets/audio/words/sawah.mp3" }
+            { "text": "wa", "syllables": ["wa"], "colors": ["red"] },
+            { "text": "wah", "syllables": ["wah"], "colors": ["dark"] },
+            { "text": "sawah", "syllables": ["sa", "wah"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "ba", "syllables": ["ba"], "colors": ["red"], "audio": "assets/audio/words/ba.mp3" },
-            { "text": "bah", "syllables": ["bah"], "colors": ["dark"], "audio": "assets/audio/words/bah.mp3" },
-            { "text": "abah", "syllables": ["a", "bah"], "colors": ["red", "dark"], "audio": "assets/audio/words/abah.mp3" }
+            { "text": "ba", "syllables": ["ba"], "colors": ["red"] },
+            { "text": "bah", "syllables": ["bah"], "colors": ["dark"] },
+            { "text": "abah", "syllables": ["a", "bah"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "ga", "syllables": ["ga"], "colors": ["red"], "audio": "assets/audio/words/ga.mp3" },
-            { "text": "gah", "syllables": ["gah"], "colors": ["dark"], "audio": "assets/audio/words/gah.mp3" },
-            { "text": "gagah", "syllables": ["ga", "gah"], "colors": ["red", "dark"], "audio": "assets/audio/words/gagah.mp3" }
+            { "text": "ga", "syllables": ["ga"], "colors": ["red"] },
+            { "text": "gah", "syllables": ["gah"], "colors": ["dark"] },
+            { "text": "gagah", "syllables": ["ga", "gah"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "na", "syllables": ["na"], "colors": ["red"], "audio": "assets/audio/words/na.mp3" },
-            { "text": "nah", "syllables": ["nah"], "colors": ["dark"], "audio": "assets/audio/words/nah.mp3" },
-            { "text": "panah", "syllables": ["pa", "nah"], "colors": ["red", "dark"], "audio": "assets/audio/words/panah.mp3" }
+            { "text": "na", "syllables": ["na"], "colors": ["red"] },
+            { "text": "nah", "syllables": ["nah"], "colors": ["dark"] },
+            { "text": "panah", "syllables": ["pa", "nah"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "ca", "syllables": ["ca"], "colors": ["red"], "audio": "assets/audio/words/ca.mp3" },
-            { "text": "cah", "syllables": ["cah"], "colors": ["dark"], "audio": "assets/audio/words/cah.mp3" },
-            { "text": "bocah", "syllables": ["bo", "cah"], "colors": ["red", "dark"], "audio": "assets/audio/words/bocah.mp3" }
+            { "text": "ca", "syllables": ["ca"], "colors": ["red"] },
+            { "text": "cah", "syllables": ["cah"], "colors": ["dark"] },
+            { "text": "bocah", "syllables": ["bo", "cah"], "colors": ["red", "dark"] }
           ]
         ]
       },
       {
         "page_number": 2,
-        "page_audio": "assets/audio/chapters/c1_p2.mp3",
         "rows": [
           [
-            { "text": "abah", "syllables": ["a", "bah"], "colors": ["purple", "green"], "audio": "assets/audio/words/abah.mp3" },
-            { "text": "saya", "syllables": ["sa", "ya"], "colors": ["purple", "green"], "audio": "assets/audio/words/saya.mp3" },
-            { "text": "gagah", "syllables": ["ga", "gah"], "colors": ["purple", "green"], "audio": "assets/audio/words/gagah.mp3" }
+            { "text": "abah", "syllables": ["a", "bah"], "colors": ["purple", "green"] },
+            { "text": "saya", "syllables": ["sa", "ya"], "colors": ["purple", "green"] },
+            { "text": "gagah", "syllables": ["ga", "gah"], "colors": ["purple", "green"] }
           ],
           [
-            { "text": "rumah", "syllables": ["ru", "mah"], "colors": ["purple", "green"], "audio": "assets/audio/words/rumah.mp3" },
-            { "text": "dari", "syllables": ["da", "ri"], "colors": ["purple", "green"], "audio": "assets/audio/words/dari.mp3" },
-            { "text": "bata", "syllables": ["ba", "ta"], "colors": ["purple", "green"], "audio": "assets/audio/words/bata.mp3" }
+            { "text": "rumah", "syllables": ["ru", "mah"], "colors": ["purple", "green"] },
+            { "text": "dari", "syllables": ["da", "ri"], "colors": ["purple", "green"] },
+            { "text": "bata", "syllables": ["ba", "ta"], "colors": ["purple", "green"] }
           ],
           [
-            { "text": "tanah", "syllables": ["ta", "nah"], "colors": ["purple", "green"], "audio": "assets/audio/words/tanah.mp3" },
-            { "text": "jadi", "syllables": ["ja", "di"], "colors": ["purple", "green"], "audio": "assets/audio/words/jadi.mp3" },
-            { "text": "batako", "syllables": ["ba", "ta", "ko"], "colors": ["purple", "purple", "green"], "audio": "assets/audio/words/batako.mp3" }
+            { "text": "tanah", "syllables": ["ta", "nah"], "colors": ["purple", "green"] },
+            { "text": "jadi", "syllables": ["ja", "di"], "colors": ["purple", "green"] },
+            { "text": "batako", "syllables": ["ba", "ta", "ko"], "colors": ["purple", "purple", "green"] }
           ],
           [
-            { "text": "bocah", "syllables": ["bo", "cah"], "colors": ["purple", "green"], "audio": "assets/audio/words/bocah.mp3" },
-            { "text": "suka", "syllables": ["su", "ka"], "colors": ["purple", "green"], "audio": "assets/audio/words/suka.mp3" },
-            { "text": "panah", "syllables": ["pa", "nah"], "colors": ["purple", "green"], "audio": "assets/audio/words/panah.mp3" }
+            { "text": "bocah", "syllables": ["bo", "cah"], "colors": ["purple", "green"] },
+            { "text": "suka", "syllables": ["su", "ka"], "colors": ["purple", "green"] },
+            { "text": "panah", "syllables": ["pa", "nah"], "colors": ["purple", "green"] }
           ],
           [
-            { "text": "ayah", "syllables": ["a", "yah"], "colors": ["purple", "green"], "audio": "assets/audio/words/ayah.mp3" },
-            { "text": "sewa", "syllables": ["se", "wa"], "colors": ["purple", "green"], "audio": "assets/audio/words/sewa.mp3" },
-            { "text": "sawah", "syllables": ["sa", "wah"], "colors": ["purple", "green"], "audio": "assets/audio/words/sawah.mp3" }
+            { "text": "ayah", "syllables": ["a", "yah"], "colors": ["purple", "green"] },
+            { "text": "sewa", "syllables": ["se", "wa"], "colors": ["purple", "green"] },
+            { "text": "sawah", "syllables": ["sa", "wah"], "colors": ["purple", "green"] }
           ]
         ]
       }
@@ -80,81 +78,1221 @@
   {
     "id": "chapter_2",
     "chapter_number": 2,
-    "title": "a-as",
-    "description": "Mengenal akhiran as",
+    "title": "ih-uh-eh-oh",
+    "description": "Mengenal akhiran ih, uh, eh, oh",
     "pages": [
       {
         "page_number": 1,
-        "page_audio": "assets/audio/chapters/c2_p1.mp3",
         "rows": [
           [
-            { "text": "a-as", "syllables": ["a", "-", "as"], "colors": ["red", "dark", "red"], "audio": "assets/audio/words/a_as.mp3" }
+            { "text": "ih-uh-eh-oh", "syllables": ["ih", "-", "uh", "-", "eh", "-", "oh"], "colors": ["red", "dark", "red", "dark", "red", "dark", "red"] }
           ],
           [
-            { "text": "na", "syllables": ["na"], "colors": ["red"], "audio": "assets/audio/words/na.mp3" },
-            { "text": "nas", "syllables": ["nas"], "colors": ["dark"], "audio": "assets/audio/words/nas.mp3" },
-            { "text": "nanas", "syllables": ["na", "nas"], "colors": ["red", "dark"], "audio": "assets/audio/words/nanas.mp3" }
+            { "text": "gi", "syllables": ["gi"], "colors": ["red"] },
+            { "text": "gih", "syllables": ["gih"], "colors": ["dark"] },
+            { "text": "gigih", "syllables": ["gi", "gih"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "pa", "syllables": ["pa"], "colors": ["red"], "audio": "assets/audio/words/pa.mp3" },
-            { "text": "pas", "syllables": ["pas"], "colors": ["dark"], "audio": "assets/audio/words/pas.mp3" },
-            { "text": "kipas", "syllables": ["ki", "pas"], "colors": ["red", "dark"], "audio": "assets/audio/words/kipas.mp3" }
+            { "text": "tu", "syllables": ["tu"], "colors": ["red"] },
+            { "text": "tuh", "syllables": ["tuh"], "colors": ["dark"] },
+            { "text": "patuh", "syllables": ["pa", "tuh"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "ga", "syllables": ["ga"], "colors": ["red"], "audio": "assets/audio/words/ga.mp3" },
-            { "text": "gas", "syllables": ["gas"], "colors": ["dark"], "audio": "assets/audio/words/gas.mp3" },
-            { "text": "tegas", "syllables": ["te", "gas"], "colors": ["red", "dark"], "audio": "assets/audio/words/tegas.mp3" }
+            { "text": "ri", "syllables": ["ri"], "colors": ["red"] },
+            { "text": "rih", "syllables": ["rih"], "colors": ["dark"] },
+            { "text": "gurih", "syllables": ["gu", "rih"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "da", "syllables": ["da"], "colors": ["red"], "audio": "assets/audio/words/da.mp3" },
-            { "text": "das", "syllables": ["das"], "colors": ["dark"], "audio": "assets/audio/words/das.mp3" },
-            { "text": "pedas", "syllables": ["pe", "das"], "colors": ["red", "dark"], "audio": "assets/audio/words/pedas.mp3" }
+            { "text": "te", "syllables": ["te"], "colors": ["red"] },
+            { "text": "teh", "syllables": ["teh"], "colors": ["dark"] },
+            { "text": "teteh", "syllables": ["te", "teh"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "ra", "syllables": ["ra"], "colors": ["red"], "audio": "assets/audio/words/ra.mp3" },
-            { "text": "ras", "syllables": ["ras"], "colors": ["dark"], "audio": "assets/audio/words/ras.mp3" },
-            { "text": "keras", "syllables": ["ke", "ras"], "colors": ["red", "dark"], "audio": "assets/audio/words/keras.mp3" }
+            { "text": "ko", "syllables": ["ko"], "colors": ["red"] },
+            { "text": "koh", "syllables": ["koh"], "colors": ["dark"] },
+            { "text": "tokoh", "syllables": ["to", "koh"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "la", "syllables": ["la"], "colors": ["red"], "audio": "assets/audio/words/la.mp3" },
-            { "text": "las", "syllables": ["las"], "colors": ["dark"], "audio": "assets/audio/words/las.mp3" },
-            { "text": "kelas", "syllables": ["ke", "las"], "colors": ["red", "dark"], "audio": "assets/audio/words/kelas.mp3" }
+            { "text": "bo", "syllables": ["bo"], "colors": ["red"] },
+            { "text": "boh", "syllables": ["boh"], "colors": ["dark"] },
+            { "text": "heboh", "syllables": ["he", "boh"], "colors": ["red", "dark"] }
           ]
         ]
       },
       {
         "page_number": 2,
-        "page_audio": "assets/audio/chapters/c2_p2.mp3",
         "rows": [
           [
-            { "text": "inas", "syllables": ["i", "nas"], "colors": ["purple", "green"], "audio": "assets/audio/words/inas.mp3" },
-            { "text": "beli", "syllables": ["be", "li"], "colors": ["purple", "green"], "audio": "assets/audio/words/beli.mp3" },
-            { "text": "nanas", "syllables": ["na", "nas"], "colors": ["purple", "green"], "audio": "assets/audio/words/nanas.mp3" }
+            { "text": "deni", "syllables": ["de", "ni"], "colors": ["purple", "green"] },
+            { "text": "itu", "syllables": ["i", "tu"], "colors": ["purple", "green"] },
+            { "text": "gigih", "syllables": ["gi", "gih"], "colors": ["purple", "green"] }
           ],
           [
-            { "text": "guruku", "syllables": ["gu", "ru", "ku"], "colors": ["purple", "purple", "green"], "audio": "assets/audio/words/guruku.mp3" },
-            { "text": "itu", "syllables": ["i", "tu"], "colors": ["purple", "green"], "audio": "assets/audio/words/itu.mp3" },
-            { "text": "tegas", "syllables": ["te", "gas"], "colors": ["purple", "green"], "audio": "assets/audio/words/tegas.mp3" }
+            { "text": "patuh", "syllables": ["pa", "tuh"], "colors": ["purple", "green"] },
+            { "text": "pada", "syllables": ["pa", "da"], "colors": ["purple", "green"] },
+            { "text": "guru", "syllables": ["gu", "ru"], "colors": ["purple", "green"] }
           ],
           [
-            { "text": "panas", "syllables": ["pa", "nas"], "colors": ["purple", "green"], "audio": "assets/audio/words/panas.mp3" },
-            { "text": "ada", "syllables": ["a", "da"], "colors": ["purple", "green"], "audio": "assets/audio/words/ada.mp3" },
-            { "text": "kipas", "syllables": ["ki", "pas"], "colors": ["purple", "green"], "audio": "assets/audio/words/kipas.mp3" }
+            { "text": "rasa", "syllables": ["ra", "sa"], "colors": ["purple", "green"] },
+            { "text": "roti", "syllables": ["ro", "ti"], "colors": ["purple", "green"] },
+            { "text": "itu", "syllables": ["i", "tu"], "colors": ["purple", "green"] },
+            { "text": "gurih", "syllables": ["gu", "rih"], "colors": ["purple", "green"] }
           ],
           [
-            { "text": "beli", "syllables": ["be", "li"], "colors": ["purple", "green"], "audio": "assets/audio/words/beli.mp3" },
-            { "text": "pare", "syllables": ["pa", "re"], "colors": ["purple", "green"], "audio": "assets/audio/words/pare.mp3" },
-            { "text": "pedas", "syllables": ["pe", "das"], "colors": ["purple", "green"], "audio": "assets/audio/words/pedas.mp3" }
+            { "text": "teteh", "syllables": ["te", "teh"], "colors": ["purple", "green"] },
+            { "text": "ada", "syllables": ["a", "da"], "colors": ["purple", "green"] },
+            { "text": "di", "syllables": ["di"], "colors": ["purple"] },
+            { "text": "mana", "syllables": ["ma", "na"], "colors": ["purple", "green"] }
           ],
           [
-            { "text": "kayu", "syllables": ["ka", "yu"], "colors": ["purple", "green"], "audio": "assets/audio/words/kayu.mp3" },
-            { "text": "jati", "syllables": ["ja", "ti"], "colors": ["purple", "green"], "audio": "assets/audio/words/jati.mp3" },
-            { "text": "keras", "syllables": ["ke", "ras"], "colors": ["purple", "green"], "audio": "assets/audio/words/keras.mp3" }
+            { "text": "ayah", "syllables": ["a", "yah"], "colors": ["purple", "green"] },
+            { "text": "jadi", "syllables": ["ja", "di"], "colors": ["purple", "green"] },
+            { "text": "tokoh", "syllables": ["to", "koh"], "colors": ["purple", "green"] }
           ],
           [
-            { "text": "yuni", "syllables": ["yu", "ni"], "colors": ["purple", "green"], "audio": "assets/audio/words/yuni.mp3" },
-            { "text": "kelas", "syllables": ["ke", "las"], "colors": ["purple", "green"], "audio": "assets/audio/words/kelas.mp3" },
-            { "text": "satu", "syllables": ["sa", "tu"], "colors": ["purple", "green"], "audio": "assets/audio/words/satu.mp3" }
+            { "text": "penari", "syllables": ["pe", "na", "ri"], "colors": ["purple", "purple", "green"] },
+            { "text": "itu", "syllables": ["i", "tu"], "colors": ["purple", "green"] },
+            { "text": "heboh", "syllables": ["he", "boh"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_3",
+    "chapter_number": 3,
+    "title": "a-as",
+    "description": "Mengenal akhiran as",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "a-as", "syllables": ["a", "-", "as"], "colors": ["red", "dark", "red"] }
+          ],
+          [
+            { "text": "na", "syllables": ["na"], "colors": ["red"] },
+            { "text": "nas", "syllables": ["nas"], "colors": ["dark"] },
+            { "text": "nanas", "syllables": ["na", "nas"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "pa", "syllables": ["pa"], "colors": ["red"] },
+            { "text": "pas", "syllables": ["pas"], "colors": ["dark"] },
+            { "text": "kipas", "syllables": ["ki", "pas"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ga", "syllables": ["ga"], "colors": ["red"] },
+            { "text": "gas", "syllables": ["gas"], "colors": ["dark"] },
+            { "text": "tegas", "syllables": ["te", "gas"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "da", "syllables": ["da"], "colors": ["red"] },
+            { "text": "das", "syllables": ["das"], "colors": ["dark"] },
+            { "text": "pedas", "syllables": ["pe", "das"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ra", "syllables": ["ra"], "colors": ["red"] },
+            { "text": "ras", "syllables": ["ras"], "colors": ["dark"] },
+            { "text": "keras", "syllables": ["ke", "ras"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "la", "syllables": ["la"], "colors": ["red"] },
+            { "text": "las", "syllables": ["las"], "colors": ["dark"] },
+            { "text": "kelas", "syllables": ["ke", "las"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "inas", "syllables": ["i", "nas"], "colors": ["purple", "green"] },
+            { "text": "beli", "syllables": ["be", "li"], "colors": ["purple", "green"] },
+            { "text": "nanas", "syllables": ["na", "nas"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "guruku", "syllables": ["gu", "ru", "ku"], "colors": ["purple", "purple", "green"] },
+            { "text": "itu", "syllables": ["i", "tu"], "colors": ["purple", "green"] },
+            { "text": "tegas", "syllables": ["te", "gas"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "panas", "syllables": ["pa", "nas"], "colors": ["purple", "green"] },
+            { "text": "ada", "syllables": ["a", "da"], "colors": ["purple", "green"] },
+            { "text": "kipas", "syllables": ["ki", "pas"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "beli", "syllables": ["be", "li"], "colors": ["purple", "green"] },
+            { "text": "pare", "syllables": ["pa", "re"], "colors": ["purple", "green"] },
+            { "text": "pedas", "syllables": ["pe", "das"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "kayu", "syllables": ["ka", "yu"], "colors": ["purple", "green"] },
+            { "text": "jati", "syllables": ["ja", "ti"], "colors": ["purple", "green"] },
+            { "text": "keras", "syllables": ["ke", "ras"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "yuni", "syllables": ["yu", "ni"], "colors": ["purple", "green"] },
+            { "text": "kelas", "syllables": ["ke", "las"], "colors": ["purple", "green"] },
+            { "text": "satu", "syllables": ["sa", "tu"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_4",
+    "chapter_number": 4,
+    "title": "is-us-es-os",
+    "description": "Mengenal akhiran is, us, es, os",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "is-us-es-os", "syllables": ["is", "-", "us", "-", "es", "-", "os"], "colors": ["red", "dark", "red", "dark", "red", "dark", "red"] }
+          ],
+          [
+            { "text": "si", "syllables": ["si"], "colors": ["red"] },
+            { "text": "sis", "syllables": ["sis"], "colors": ["dark"] },
+            { "text": "sosis", "syllables": ["so", "sis"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ri", "syllables": ["ri"], "colors": ["red"] },
+            { "text": "ris", "syllables": ["ris"], "colors": ["dark"] },
+            { "text": "garis", "syllables": ["ga", "ris"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "bu", "syllables": ["bu"], "colors": ["red"] },
+            { "text": "bus", "syllables": ["bus"], "colors": ["dark"] },
+            { "text": "rebus", "syllables": ["re", "bus"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "tu", "syllables": ["tu"], "colors": ["red"] },
+            { "text": "tus", "syllables": ["tus"], "colors": ["dark"] },
+            { "text": "putus", "syllables": ["pu", "tus"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "re", "syllables": ["re"], "colors": ["red"] },
+            { "text": "res", "syllables": ["res"], "colors": ["dark"] },
+            { "text": "beres", "syllables": ["be", "res"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "lo", "syllables": ["lo"], "colors": ["red"] },
+            { "text": "los", "syllables": ["los"], "colors": ["dark"] },
+            { "text": "lolos", "syllables": ["lo", "los"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "riko", "syllables": ["ri", "ko"], "colors": ["purple", "green"] },
+            { "text": "suka", "syllables": ["su", "ka"], "colors": ["purple", "green"] },
+            { "text": "sosis", "syllables": ["so", "sis"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "ada", "syllables": ["a", "da"], "colors": ["purple", "green"] },
+            { "text": "garis", "syllables": ["ga", "ris"], "colors": ["purple", "green"] },
+            { "text": "lurus", "syllables": ["lu", "rus"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "suka", "syllables": ["su", "ka"], "colors": ["purple", "green"] },
+            { "text": "ubi", "syllables": ["u", "bi"], "colors": ["purple", "green"] },
+            { "text": "rebus", "syllables": ["re", "bus"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "sisi", "syllables": ["si", "si"], "colors": ["purple", "green"] },
+            { "text": "tali", "syllables": ["ta", "li"], "colors": ["purple", "green"] },
+            { "text": "putus", "syllables": ["pu", "tus"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "tugas", "syllables": ["tu", "gas"], "colors": ["purple", "green"] },
+            { "text": "nadia", "syllables": ["na", "di", "a"], "colors": ["purple", "purple", "green"] },
+            { "text": "beres", "syllables": ["be", "res"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "lolos", "syllables": ["lo", "los"], "colors": ["purple", "green"] },
+            { "text": "juara", "syllables": ["ju", "a", "ra"], "colors": ["purple", "purple", "green"] },
+            { "text": "pidato", "syllables": ["pi", "da", "to"], "colors": ["purple", "purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_5",
+    "chapter_number": 5,
+    "title": "a-al",
+    "description": "Mengenal akhiran al",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "a-al", "syllables": ["a", "-", "al"], "colors": ["red", "dark", "red"] }
+          ],
+          [
+            { "text": "pa", "syllables": ["pa"], "colors": ["red"] },
+            { "text": "pal", "syllables": ["pal"], "colors": ["dark"] },
+            { "text": "kapal", "syllables": ["ka", "pal"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "da", "syllables": ["da"], "colors": ["red"] },
+            { "text": "dal", "syllables": ["dal"], "colors": ["dark"] },
+            { "text": "kadal", "syllables": ["ka", "dal"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ha", "syllables": ["ha"], "colors": ["red"] },
+            { "text": "hal", "syllables": ["hal"], "colors": ["dark"] },
+            { "text": "mahal", "syllables": ["ma", "hal"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ga", "syllables": ["ga"], "colors": ["red"] },
+            { "text": "gal", "syllables": ["gal"], "colors": ["dark"] },
+            { "text": "gagal", "syllables": ["ga", "gal"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ba", "syllables": ["ba"], "colors": ["red"] },
+            { "text": "bal", "syllables": ["bal"], "colors": ["dark"] },
+            { "text": "tebal", "syllables": ["te", "bal"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ma", "syllables": ["ma"], "colors": ["red"] },
+            { "text": "mal", "syllables": ["mal"], "colors": ["dark"] },
+            { "text": "amal", "syllables": ["a", "mal"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "ada", "syllables": ["a", "da"], "colors": ["purple", "green"] },
+            { "text": "lima", "syllables": ["li", "ma"], "colors": ["purple", "green"] },
+            { "text": "kapal", "syllables": ["ka", "pal"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "kadal", "syllables": ["ka", "dal"], "colors": ["purple", "green"] },
+            { "text": "itu", "syllables": ["i", "tu"], "colors": ["purple", "green"] },
+            { "text": "lari", "syllables": ["la", "ri"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "baju", "syllables": ["ba", "ju"], "colors": ["purple", "green"] },
+            { "text": "hani", "syllables": ["ha", "ni"], "colors": ["purple", "green"] },
+            { "text": "mahal", "syllables": ["ma", "hal"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "gagal", "syllables": ["ga", "gal"], "colors": ["purple", "green"] },
+            { "text": "coba", "syllables": ["co", "ba"], "colors": ["purple", "green"] },
+            { "text": "lagi", "syllables": ["la", "gi"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "jadi", "syllables": ["ja", "di"], "colors": ["purple", "green"] },
+            { "text": "amal", "syllables": ["a", "mal"], "colors": ["purple", "green"] },
+            { "text": "kita", "syllables": ["ki", "ta"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "buku", "syllables": ["bu", "ku"], "colors": ["purple", "green"] },
+            { "text": "nida", "syllables": ["ni", "da"], "colors": ["purple", "green"] },
+            { "text": "tebal", "syllables": ["te", "bal"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_6",
+    "chapter_number": 6,
+    "title": "il-ul-el-ol",
+    "description": "Mengenal akhiran il, ul, el, ol",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "il-ul-el-ol", "syllables": ["il", "-", "ul", "-", "el", "-", "ol"], "colors": ["red", "dark", "red", "dark", "red", "dark", "red"] }
+          ],
+          [
+            { "text": "bi", "syllables": ["bi"], "colors": ["red"] },
+            { "text": "bil", "syllables": ["bil"], "colors": ["dark"] },
+            { "text": "mobil", "syllables": ["mo", "bil"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "pe", "syllables": ["pe"], "colors": ["red"] },
+            { "text": "pel", "syllables": ["pel"], "colors": ["dark"] },
+            { "text": "apel", "syllables": ["a", "pel"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "si", "syllables": ["si"], "colors": ["red"] },
+            { "text": "sil", "syllables": ["sil"], "colors": ["dark"] },
+            { "text": "hasil", "syllables": ["ha", "sil"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "du", "syllables": ["du"], "colors": ["red"] },
+            { "text": "dul", "syllables": ["dul"], "colors": ["dark"] },
+            { "text": "judul", "syllables": ["ju", "dul"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "tu", "syllables": ["tu"], "colors": ["red"] },
+            { "text": "tul", "syllables": ["tul"], "colors": ["dark"] },
+            { "text": "betul", "syllables": ["be", "tul"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "to", "syllables": ["to"], "colors": ["red"] },
+            { "text": "tol", "syllables": ["tol"], "colors": ["dark"] },
+            { "text": "botol", "syllables": ["bo", "tol"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "mobil", "syllables": ["mo", "bil"], "colors": ["purple", "green"] },
+            { "text": "reni", "syllables": ["re", "ni"], "colors": ["purple", "green"] },
+            { "text": "biru", "syllables": ["bi", "ru"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "hasil", "syllables": ["ha", "sil"], "colors": ["purple", "green"] },
+            { "text": "kali", "syllables": ["ka", "li"], "colors": ["purple", "green"] },
+            { "text": "tiga", "syllables": ["ti", "ga"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "ada", "syllables": ["a", "da"], "colors": ["purple", "green"] },
+            { "text": "judul", "syllables": ["ju", "dul"], "colors": ["purple", "green"] },
+            { "text": "baru", "syllables": ["ba", "ru"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "apa", "syllables": ["a", "pa"], "colors": ["purple", "green"] },
+            { "text": "itu", "syllables": ["i", "tu"], "colors": ["purple", "green"] },
+            { "text": "betul", "syllables": ["be", "tul"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "doni", "syllables": ["do", "ni"], "colors": ["purple", "green"] },
+            { "text": "suka", "syllables": ["su", "ka"], "colors": ["purple", "green"] },
+            { "text": "apel", "syllables": ["a", "pel"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "botol", "syllables": ["bo", "tol"], "colors": ["purple", "green"] },
+            { "text": "isi", "syllables": ["i", "si"], "colors": ["purple", "green"] },
+            { "text": "gula", "syllables": ["gu", "la"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_7",
+    "chapter_number": 7,
+    "title": "a-am",
+    "description": "Mengenal akhiran am",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "a-am", "syllables": ["a", "-", "am"], "colors": ["red", "dark", "red"] }
+          ],
+          [
+            { "text": "ya", "syllables": ["ya"], "colors": ["red"] },
+            { "text": "yam", "syllables": ["yam"], "colors": ["dark"] },
+            { "text": "ayam", "syllables": ["a", "yam"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ra", "syllables": ["ra"], "colors": ["red"] },
+            { "text": "ram", "syllables": ["ram"], "colors": ["dark"] },
+            { "text": "garam", "syllables": ["ga", "ram"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ta", "syllables": ["ta"], "colors": ["red"] },
+            { "text": "tam", "syllables": ["tam"], "colors": ["dark"] },
+            { "text": "hitam", "syllables": ["hi", "tam"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "da", "syllables": ["da"], "colors": ["red"] },
+            { "text": "dam", "syllables": ["dam"], "colors": ["dark"] },
+            { "text": "padam", "syllables": ["pa", "dam"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ha", "syllables": ["ha"], "colors": ["red"] },
+            { "text": "ham", "syllables": ["ham"], "colors": ["dark"] },
+            { "text": "paham", "syllables": ["pa", "ham"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ca", "syllables": ["ca"], "colors": ["red"] },
+            { "text": "cam", "syllables": ["cam"], "colors": ["dark"] },
+            { "text": "macam", "syllables": ["ma", "cam"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "bibi", "syllables": ["bi", "bi"], "colors": ["purple", "green"] },
+            { "text": "beli", "syllables": ["be", "li"], "colors": ["purple", "green"] },
+            { "text": "ayam", "syllables": ["a", "yam"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "apa", "syllables": ["a", "pa"], "colors": ["purple", "green"] },
+            { "text": "rasa", "syllables": ["ra", "sa"], "colors": ["purple", "green"] },
+            { "text": "garam", "syllables": ["ga", "ram"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "baju", "syllables": ["ba", "ju"], "colors": ["purple", "green"] },
+            { "text": "roni", "syllables": ["ro", "ni"], "colors": ["purple", "green"] },
+            { "text": "hitam", "syllables": ["hi", "tam"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "cahaya", "syllables": ["ca", "ha", "ya"], "colors": ["purple", "purple", "green"] },
+            { "text": "api", "syllables": ["a", "pi"], "colors": ["purple", "green"] },
+            { "text": "padam", "syllables": ["pa", "dam"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "aku", "syllables": ["a", "ku"], "colors": ["purple", "green"] },
+            { "text": "jadi", "syllables": ["ja", "di"], "colors": ["purple", "green"] },
+            { "text": "paham", "syllables": ["pa", "ham"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "macam", "syllables": ["ma", "cam"], "colors": ["purple", "green"] },
+            { "text": "budaya", "syllables": ["bu", "da", "ya"], "colors": ["purple", "purple", "green"] },
+            { "text": "kita", "syllables": ["ki", "ta"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_8",
+    "chapter_number": 8,
+    "title": "im-um-em-om",
+    "description": "Mengenal akhiran im, um, em, om",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "im-um-em-om", "syllables": ["im", "-", "um", "-", "em", "-", "om"], "colors": ["red", "dark", "red", "dark", "red", "dark", "red"] }
+          ],
+          [
+            { "text": "ki", "syllables": ["ki"], "colors": ["red"] },
+            { "text": "kim", "syllables": ["kim"], "colors": ["dark"] },
+            { "text": "hakim", "syllables": ["ha", "kim"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ri", "syllables": ["ri"], "colors": ["red"] },
+            { "text": "rim", "syllables": ["rim"], "colors": ["dark"] },
+            { "text": "kirim", "syllables": ["ki", "rim"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "lu", "syllables": ["lu"], "colors": ["red"] },
+            { "text": "lum", "syllables": ["lum"], "colors": ["dark"] },
+            { "text": "belum", "syllables": ["be", "lum"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "nu", "syllables": ["nu"], "colors": ["red"] },
+            { "text": "num", "syllables": ["num"], "colors": ["dark"] },
+            { "text": "minum", "syllables": ["mi", "num"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "pe", "syllables": ["pe"], "colors": ["red"] },
+            { "text": "pem", "syllables": ["pem"], "colors": ["dark"] },
+            { "text": "apem", "syllables": ["a", "pem"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "de", "syllables": ["de"], "colors": ["red"] },
+            { "text": "dem", "syllables": ["dem"], "colors": ["dark"] },
+            { "text": "adem", "syllables": ["a", "dem"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "lo", "syllables": ["lo"], "colors": ["red"] },
+            { "text": "lom", "syllables": ["lom"], "colors": ["dark"] },
+            { "text": "kolom", "syllables": ["ko", "lom"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "hakim", "syllables": ["ha", "kim"], "colors": ["purple", "green"] },
+            { "text": "cari", "syllables": ["ca", "ri"], "colors": ["purple", "green"] },
+            { "text": "bola", "syllables": ["bo", "la"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "kirim", "syllables": ["ki", "rim"], "colors": ["purple", "green"] },
+            { "text": "lima", "syllables": ["li", "ma"], "colors": ["purple", "green"] },
+            { "text": "sapi", "syllables": ["sa", "pi"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "belum", "syllables": ["be", "lum"], "colors": ["purple", "green"] },
+            { "text": "minum", "syllables": ["mi", "num"], "colors": ["purple", "green"] },
+            { "text": "susu", "syllables": ["su", "su"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "apem", "syllables": ["a", "pem"], "colors": ["purple", "green"] },
+            { "text": "dari", "syllables": ["da", "ri"], "colors": ["purple", "green"] },
+            { "text": "solo", "syllables": ["so", "lo"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "hari", "syllables": ["ha", "ri"], "colors": ["purple", "green"] },
+            { "text": "ini", "syllables": ["i", "ni"], "colors": ["purple", "green"] },
+            { "text": "adem", "syllables": ["a", "dem"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "dua", "syllables": ["du", "a"], "colors": ["purple", "green"] },
+            { "text": "kolom", "syllables": ["ko", "lom"], "colors": ["purple", "green"] },
+            { "text": "besi", "syllables": ["be", "si"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_9",
+    "chapter_number": 9,
+    "title": "a-an",
+    "description": "Mengenal akhiran an",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "a-an", "syllables": ["a", "-", "an"], "colors": ["red", "dark", "red"] }
+          ],
+          [
+            { "text": "ja", "syllables": ["ja"], "colors": ["red"] },
+            { "text": "jan", "syllables": ["jan"], "colors": ["dark"] },
+            { "text": "hujan", "syllables": ["hu", "jan"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "la", "syllables": ["la"], "colors": ["red"] },
+            { "text": "lan", "syllables": ["lan"], "colors": ["dark"] },
+            { "text": "bulan", "syllables": ["bu", "lan"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "a", "syllables": ["a"], "colors": ["red"] },
+            { "text": "an", "syllables": ["an"], "colors": ["dark"] },
+            { "text": "andi", "syllables": ["an", "di"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "pa", "syllables": ["pa"], "colors": ["red"] },
+            { "text": "pan", "syllables": ["pan"], "colors": ["dark"] },
+            { "text": "panda", "syllables": ["pan", "da"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ta", "syllables": ["ta"], "colors": ["red"] },
+            { "text": "tan", "syllables": ["tan"], "colors": ["dark"] },
+            { "text": "tanda", "syllables": ["tan", "da"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ga", "syllables": ["ga"], "colors": ["red"] },
+            { "text": "gan", "syllables": ["gan"], "colors": ["dark"] },
+            { "text": "ganti", "syllables": ["gan", "ti"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "bola", "syllables": ["bo", "la"], "colors": ["purple", "green"] },
+            { "text": "andi", "syllables": ["an", "di"], "colors": ["purple", "green"] },
+            { "text": "satu", "syllables": ["sa", "tu"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "boneka", "syllables": ["bo", "ne", "ka"], "colors": ["purple", "purple", "green"] },
+            { "text": "panda", "syllables": ["pan", "da"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "hari", "syllables": ["ha", "ri"], "colors": ["purple", "green"] },
+            { "text": "lusa", "syllables": ["lu", "sa"], "colors": ["purple", "green"] },
+            { "text": "hujan", "syllables": ["hu", "jan"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "tanda", "syllables": ["tan", "da"], "colors": ["purple", "green"] },
+            { "text": "ke", "syllables": ["ke"], "colors": ["purple"] },
+            { "text": "utara", "syllables": ["u", "ta", "ra"], "colors": ["purple", "purple", "green"] }
+          ],
+          [
+            { "text": "ganti", "syllables": ["gan", "ti"], "colors": ["purple", "green"] },
+            { "text": "roda", "syllables": ["ro", "da"], "colors": ["purple", "green"] },
+            { "text": "mobil", "syllables": ["mo", "bil"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "malam", "syllables": ["ma", "lam"], "colors": ["purple", "green"] },
+            { "text": "ada", "syllables": ["a", "da"], "colors": ["purple", "green"] },
+            { "text": "bulan", "syllables": ["bu", "lan"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_10",
+    "chapter_number": 10,
+    "title": "in-un-en-on",
+    "description": "Mengenal akhiran in, un, en, on",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "in-un-en-on", "syllables": ["in", "-", "un", "-", "en", "-", "on"], "colors": ["red", "dark", "red", "dark", "red", "dark", "red"] }
+          ],
+          [
+            { "text": "pi", "syllables": ["pi"], "colors": ["red"] },
+            { "text": "pin", "syllables": ["pin"], "colors": ["dark"] },
+            { "text": "pintu", "syllables": ["pin", "tu"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ho", "syllables": ["ho"], "colors": ["red"] },
+            { "text": "hon", "syllables": ["hon"], "colors": ["dark"] },
+            { "text": "pohon", "syllables": ["po", "hon"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ri", "syllables": ["ri"], "colors": ["red"] },
+            { "text": "rin", "syllables": ["rin"], "colors": ["dark"] },
+            { "text": "rindu", "syllables": ["rin", "du"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "bu", "syllables": ["bu"], "colors": ["red"] },
+            { "text": "bun", "syllables": ["bun"], "colors": ["dark"] },
+            { "text": "bunda", "syllables": ["bun", "da"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "te", "syllables": ["te"], "colors": ["red"] },
+            { "text": "ten", "syllables": ["ten"], "colors": ["dark"] },
+            { "text": "tenda", "syllables": ["ten", "da"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "su", "syllables": ["su"], "colors": ["red"] },
+            { "text": "sun", "syllables": ["sun"], "colors": ["dark"] },
+            { "text": "sunda", "syllables": ["sun", "da"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "kami", "syllables": ["ka", "mi"], "colors": ["purple", "green"] },
+            { "text": "rindu", "syllables": ["rin", "du"], "colors": ["purple", "green"] },
+            { "text": "ibu", "syllables": ["i", "bu"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "pintu", "syllables": ["pin", "tu"], "colors": ["purple", "green"] },
+            { "text": "rumah", "syllables": ["ru", "mah"], "colors": ["purple", "green"] },
+            { "text": "biru", "syllables": ["bi", "ru"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "bunda", "syllables": ["bun", "da"], "colors": ["purple", "green"] },
+            { "text": "di", "syllables": ["di"], "colors": ["purple"] },
+            { "text": "teras", "syllables": ["te", "ras"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "tenda", "syllables": ["ten", "da"], "colors": ["purple", "green"] },
+            { "text": "merah", "syllables": ["me", "rah"], "colors": ["purple", "green"] },
+            { "text": "marun", "syllables": ["ma", "run"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "pohon", "syllables": ["po", "hon"], "colors": ["purple", "green"] },
+            { "text": "di", "syllables": ["di"], "colors": ["purple"] },
+            { "text": "taman", "syllables": ["ta", "man"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "bisa", "syllables": ["bi", "sa"], "colors": ["purple", "green"] },
+            { "text": "bahasa", "syllables": ["ba", "ha", "sa"], "colors": ["purple", "purple", "green"] },
+            { "text": "sunda", "syllables": ["sun", "da"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_11",
+    "chapter_number": 11,
+    "title": "a-ar",
+    "description": "Mengenal akhiran ar",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "a-ar", "syllables": ["a", "-", "ar"], "colors": ["red", "dark", "red"] }
+          ],
+          [
+            { "text": "ta", "syllables": ["ta"], "colors": ["red"] },
+            { "text": "tar", "syllables": ["tar"], "colors": ["dark"] },
+            { "text": "gitar", "syllables": ["gi", "tar"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "wa", "syllables": ["wa"], "colors": ["red"] },
+            { "text": "war", "syllables": ["war"], "colors": ["dark"] },
+            { "text": "mawar", "syllables": ["ma", "war"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "sa", "syllables": ["sa"], "colors": ["red"] },
+            { "text": "sar", "syllables": ["sar"], "colors": ["dark"] },
+            { "text": "besar", "syllables": ["be", "sar"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ja", "syllables": ["ja"], "colors": ["red"] },
+            { "text": "jar", "syllables": ["jar"], "colors": ["dark"] },
+            { "text": "belajar", "syllables": ["be", "la", "jar"], "colors": ["red", "red", "dark"] }
+          ],
+          [
+            { "text": "ba", "syllables": ["ba"], "colors": ["red"] },
+            { "text": "bar", "syllables": ["bar"], "colors": ["dark"] },
+            { "text": "sabar", "syllables": ["sa", "bar"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ka", "syllables": ["ka"], "colors": ["red"] },
+            { "text": "kar", "syllables": ["kar"], "colors": ["dark"] },
+            { "text": "akar", "syllables": ["a", "kar"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "ani", "syllables": ["a", "ni"], "colors": ["purple", "green"] },
+            { "text": "suka", "syllables": ["su", "ka"], "colors": ["purple", "green"] },
+            { "text": "mawar", "syllables": ["ma", "war"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "sepatu", "syllables": ["se", "pa", "tu"], "colors": ["purple", "purple", "green"] },
+            { "text": "besar", "syllables": ["be", "sar"], "colors": ["purple", "green"] },
+            { "text": "ada", "syllables": ["a", "da"], "colors": ["purple", "green"] },
+            { "text": "tali", "syllables": ["ta", "li"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "jodi", "syllables": ["jo", "di"], "colors": ["purple", "green"] },
+            { "text": "beli", "syllables": ["be", "li"], "colors": ["purple", "green"] },
+            { "text": "gitar", "syllables": ["gi", "tar"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "aku", "syllables": ["a", "ku"], "colors": ["purple", "green"] },
+            { "text": "suka", "syllables": ["su", "ka"], "colors": ["purple", "green"] },
+            { "text": "belajar", "syllables": ["be", "la", "jar"], "colors": ["purple", "purple", "green"] }
+          ],
+          [
+            { "text": "papa", "syllables": ["pa", "pa"], "colors": ["purple", "green"] },
+            { "text": "biasa", "syllables": ["bi", "a", "sa"], "colors": ["purple", "purple", "green"] },
+            { "text": "sabar", "syllables": ["sa", "bar"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "akar", "syllables": ["a", "kar"], "colors": ["purple", "green"] },
+            { "text": "pohon", "syllables": ["po", "hon"], "colors": ["purple", "green"] },
+            { "text": "besar", "syllables": ["be", "sar"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_12",
+    "chapter_number": 12,
+    "title": "ir-ur-er-or",
+    "description": "Mengenal akhiran ir, ur, er, or",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "ir-ur-er-or", "syllables": ["ir", "-", "ur", "-", "er", "-", "or"], "colors": ["red", "dark", "red", "dark", "red", "dark", "red"] }
+          ],
+          [
+            { "text": "si", "syllables": ["si"], "colors": ["red"] },
+            { "text": "sir", "syllables": ["sir"], "colors": ["dark"] },
+            { "text": "sisir", "syllables": ["si", "sir"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "bi", "syllables": ["bi"], "colors": ["red"] },
+            { "text": "bir", "syllables": ["bir"], "colors": ["dark"] },
+            { "text": "bibir", "syllables": ["bi", "bir"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "su", "syllables": ["su"], "colors": ["red"] },
+            { "text": "sur", "syllables": ["sur"], "colors": ["dark"] },
+            { "text": "busur", "syllables": ["bu", "sur"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "e", "syllables": ["e"], "colors": ["red"] },
+            { "text": "er", "syllables": ["er"], "colors": ["dark"] },
+            { "text": "erna", "syllables": ["er", "na"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "po", "syllables": ["po"], "colors": ["red"] },
+            { "text": "por", "syllables": ["por"], "colors": ["dark"] },
+            { "text": "opor", "syllables": ["o", "por"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ke", "syllables": ["ke"], "colors": ["red"] },
+            { "text": "ker", "syllables": ["ker"], "colors": ["dark"] },
+            { "text": "kertas", "syllables": ["ker", "tas"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "bibir", "syllables": ["bi", "bir"], "colors": ["purple", "green"] },
+            { "text": "kamu", "syllables": ["ka", "mu"], "colors": ["purple", "green"] },
+            { "text": "merah", "syllables": ["me", "rah"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "itu", "syllables": ["i", "tu"], "colors": ["purple", "green"] },
+            { "text": "busur", "syllables": ["bu", "sur"], "colors": ["purple", "green"] },
+            { "text": "panah", "syllables": ["pa", "nah"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "erna", "syllables": ["er", "na"], "colors": ["purple", "green"] },
+            { "text": "suka", "syllables": ["su", "ka"], "colors": ["purple", "green"] },
+            { "text": "cerita", "syllables": ["ce", "ri", "ta"], "colors": ["purple", "purple", "green"] }
+          ],
+          [
+            { "text": "suka", "syllables": ["su", "ka"], "colors": ["purple", "green"] },
+            { "text": "opor", "syllables": ["o", "por"], "colors": ["purple", "green"] },
+            { "text": "ayam", "syllables": ["a", "yam"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "sisir", "syllables": ["si", "sir"], "colors": ["purple", "green"] },
+            { "text": "warna", "syllables": ["war", "na"], "colors": ["purple", "green"] },
+            { "text": "biru", "syllables": ["bi", "ru"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "beli", "syllables": ["be", "li"], "colors": ["purple", "green"] },
+            { "text": "kertas", "syllables": ["ker", "tas"], "colors": ["purple", "green"] },
+            { "text": "putih", "syllables": ["pu", "tih"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_13",
+    "chapter_number": 13,
+    "title": "a-ak",
+    "description": "Mengenal akhiran ak",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "a-ak", "syllables": ["a", "-", "ak"], "colors": ["red", "dark", "red"] }
+          ],
+          [
+            { "text": "ta", "syllables": ["ta"], "colors": ["red"] },
+            { "text": "tak", "syllables": ["tak"], "colors": ["dark"] },
+            { "text": "taksi", "syllables": ["tak", "si"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ba", "syllables": ["ba"], "colors": ["red"] },
+            { "text": "bak", "syllables": ["bak"], "colors": ["dark"] },
+            { "text": "bakso", "syllables": ["bak", "so"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "fa", "syllables": ["fa"], "colors": ["red"] },
+            { "text": "fak", "syllables": ["fak"], "colors": ["dark"] },
+            { "text": "fakta", "syllables": ["fak", "ta"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ma", "syllables": ["ma"], "colors": ["red"] },
+            { "text": "mak", "syllables": ["mak"], "colors": ["dark"] },
+            { "text": "makna", "syllables": ["mak", "na"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ja", "syllables": ["ja"], "colors": ["red"] },
+            { "text": "jak", "syllables": ["jak"], "colors": ["dark"] },
+            { "text": "jaksa", "syllables": ["jak", "sa"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ka", "syllables": ["ka"], "colors": ["red"] },
+            { "text": "kak", "syllables": ["kak"], "colors": ["dark"] },
+            { "text": "kakak", "syllables": ["ka", "kak"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "taksi", "syllables": ["tak", "si"], "colors": ["purple", "green"] },
+            { "text": "menuju", "syllables": ["me", "nu", "ju"], "colors": ["purple", "purple", "green"] },
+            { "text": "kota", "syllables": ["ko", "ta"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "robi", "syllables": ["ro", "bi"], "colors": ["purple", "green"] },
+            { "text": "jadi", "syllables": ["ja", "di"], "colors": ["purple", "green"] },
+            { "text": "jaksa", "syllables": ["jak", "sa"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "makna", "syllables": ["mak", "na"], "colors": ["purple", "green"] },
+            { "text": "dari", "syllables": ["da", "ri"], "colors": ["purple", "green"] },
+            { "text": "kata", "syllables": ["ka", "ta"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "fakta", "syllables": ["fak", "ta"], "colors": ["purple", "green"] },
+            { "text": "itu", "syllables": ["i", "tu"], "colors": ["purple", "green"] },
+            { "text": "ada", "syllables": ["a", "da"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "suka", "syllables": ["su", "ka"], "colors": ["purple", "green"] },
+            { "text": "bakso", "syllables": ["bak", "so"], "colors": ["purple", "green"] },
+            { "text": "sapi", "syllables": ["sa", "pi"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "kakak", "syllables": ["ka", "kak"], "colors": ["purple", "green"] },
+            { "text": "bawa", "syllables": ["ba", "wa"], "colors": ["purple", "green"] },
+            { "text": "kolak", "syllables": ["ko", "lak"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_14",
+    "chapter_number": 14,
+    "title": "ik-uk-ek-ok",
+    "description": "Mengenal akhiran ik, uk, ek, ok",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "ik-uk-ek-ok", "syllables": ["ik", "-", "uk", "-", "ek", "-", "ok"], "colors": ["red", "dark", "red", "dark", "red", "dark", "red"] }
+          ],
+          [
+            { "text": "be", "syllables": ["be"], "colors": ["red"] },
+            { "text": "bek", "syllables": ["bek"], "colors": ["dark"] },
+            { "text": "bebek", "syllables": ["be", "bek"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "do", "syllables": ["do"], "colors": ["red"] },
+            { "text": "dok", "syllables": ["dok"], "colors": ["dark"] },
+            { "text": "dokter", "syllables": ["dok", "ter"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "si", "syllables": ["si"], "colors": ["red"] },
+            { "text": "sik", "syllables": ["sik"], "colors": ["dark"] },
+            { "text": "sisik", "syllables": ["si", "sik"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "bu", "syllables": ["bu"], "colors": ["red"] },
+            { "text": "buk", "syllables": ["buk"], "colors": ["dark"] },
+            { "text": "bubuk", "syllables": ["bu", "buk"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ko", "syllables": ["ko"], "colors": ["red"] },
+            { "text": "kok", "syllables": ["kok"], "colors": ["dark"] },
+            { "text": "kokok", "syllables": ["ko", "kok"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ti", "syllables": ["ti"], "colors": ["red"] },
+            { "text": "tik", "syllables": ["tik"], "colors": ["dark"] },
+            { "text": "batik", "syllables": ["ba", "tik"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "itu", "syllables": ["i", "tu"], "colors": ["purple", "green"] },
+            { "text": "sisik", "syllables": ["si", "sik"], "colors": ["purple", "green"] },
+            { "text": "ular", "syllables": ["u", "lar"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "susu", "syllables": ["su", "su"], "colors": ["purple", "green"] },
+            { "text": "bubuk", "syllables": ["bu", "buk"], "colors": ["purple", "green"] },
+            { "text": "enak", "syllables": ["e", "nak"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "panen", "syllables": ["pa", "nen"], "colors": ["purple", "green"] },
+            { "text": "telur", "syllables": ["te", "lur"], "colors": ["purple", "green"] },
+            { "text": "bebek", "syllables": ["be", "bek"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "kokok", "syllables": ["ko", "kok"], "colors": ["purple", "green"] },
+            { "text": "ayam", "syllables": ["a", "yam"], "colors": ["purple", "green"] },
+            { "text": "jantan", "syllables": ["jan", "tan"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "harus", "syllables": ["ha", "rus"], "colors": ["purple", "green"] },
+            { "text": "periksa", "syllables": ["pe", "rik", "sa"], "colors": ["purple", "purple", "green"] },
+            { "text": "dokter", "syllables": ["dok", "ter"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "batik", "syllables": ["ba", "tik"], "colors": ["purple", "green"] },
+            { "text": "dari", "syllables": ["da", "ri"], "colors": ["purple", "green"] },
+            { "text": "jawa", "syllables": ["ja", "wa"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_15",
+    "chapter_number": 15,
+    "title": "a-at",
+    "description": "Mengenal akhiran at",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "a-at", "syllables": ["a", "-", "at"], "colors": ["red", "dark", "red"] }
+          ],
+          [
+            { "text": "ma", "syllables": ["ma"], "colors": ["red"] },
+            { "text": "mat", "syllables": ["mat"], "colors": ["dark"] },
+            { "text": "tomat", "syllables": ["to", "mat"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ba", "syllables": ["ba"], "colors": ["red"] },
+            { "text": "bat", "syllables": ["bat"], "colors": ["dark"] },
+            { "text": "obat", "syllables": ["o", "bat"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "da", "syllables": ["da"], "colors": ["red"] },
+            { "text": "dat", "syllables": ["dat"], "colors": ["dark"] },
+            { "text": "adat", "syllables": ["a", "dat"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "la", "syllables": ["la"], "colors": ["red"] },
+            { "text": "lat", "syllables": ["lat"], "colors": ["dark"] },
+            { "text": "lalat", "syllables": ["la", "lat"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ra", "syllables": ["ra"], "colors": ["red"] },
+            { "text": "rat", "syllables": ["rat"], "colors": ["dark"] },
+            { "text": "surat", "syllables": ["su", "rat"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "na", "syllables": ["na"], "colors": ["red"] },
+            { "text": "nat", "syllables": ["nat"], "colors": ["dark"] },
+            { "text": "donat", "syllables": ["do", "nat"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "paman", "syllables": ["pa", "man"], "colors": ["purple", "green"] },
+            { "text": "minum", "syllables": ["mi", "num"], "colors": ["purple", "green"] },
+            { "text": "obat", "syllables": ["o", "bat"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "tari", "syllables": ["ta", "ri"], "colors": ["purple", "green"] },
+            { "text": "adat", "syllables": ["a", "dat"], "colors": ["purple", "green"] },
+            { "text": "jawa", "syllables": ["ja", "wa"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "gelas", "syllables": ["ge", "las"], "colors": ["purple", "green"] },
+            { "text": "ada", "syllables": ["a", "da"], "colors": ["purple", "green"] },
+            { "text": "lalat", "syllables": ["la", "lat"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "surat", "syllables": ["su", "rat"], "colors": ["purple", "green"] },
+            { "text": "dari", "syllables": ["da", "ri"], "colors": ["purple", "green"] },
+            { "text": "desa", "syllables": ["de", "sa"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "tante", "syllables": ["tan", "te"], "colors": ["purple", "green"] },
+            { "text": "masak", "syllables": ["ma", "sak"], "colors": ["purple", "green"] },
+            { "text": "donat", "syllables": ["do", "nat"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "minum", "syllables": ["mi", "num"], "colors": ["purple", "green"] },
+            { "text": "jus", "syllables": ["jus"], "colors": ["purple"] },
+            { "text": "tomat", "syllables": ["to", "mat"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_16",
+    "chapter_number": 16,
+    "title": "it-ut-et-ot",
+    "description": "Mengenal akhiran it, ut, et, ot",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "it-ut-et-ot", "syllables": ["it", "-", "ut", "-", "et", "-", "ot"], "colors": ["red", "dark", "red", "dark", "red", "dark", "red"] }
+          ],
+          [
+            { "text": "ke", "syllables": ["ke"], "colors": ["red"] },
+            { "text": "ket", "syllables": ["ket"], "colors": ["dark"] },
+            { "text": "jaket", "syllables": ["ja", "ket"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "lu", "syllables": ["lu"], "colors": ["red"] },
+            { "text": "lut", "syllables": ["lut"], "colors": ["dark"] },
+            { "text": "belut", "syllables": ["be", "lut"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "bi", "syllables": ["bi"], "colors": ["red"] },
+            { "text": "bit", "syllables": ["bit"], "colors": ["dark"] },
+            { "text": "bibit", "syllables": ["bi", "bit"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ru", "syllables": ["ru"], "colors": ["red"] },
+            { "text": "rut", "syllables": ["rut"], "colors": ["dark"] },
+            { "text": "perut", "syllables": ["pe", "rut"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "mo", "syllables": ["mo"], "colors": ["red"] },
+            { "text": "mot", "syllables": ["mot"], "colors": ["dark"] },
+            { "text": "remot", "syllables": ["re", "mot"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "lo", "syllables": ["lo"], "colors": ["red"] },
+            { "text": "lot", "syllables": ["lot"], "colors": ["dark"] },
+            { "text": "pilot", "syllables": ["pi", "lot"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "beli", "syllables": ["be", "li"], "colors": ["purple", "green"] },
+            { "text": "bibit", "syllables": ["bi", "bit"], "colors": ["purple", "green"] },
+            { "text": "sawi", "syllables": ["sa", "wi"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "cari", "syllables": ["ca", "ri"], "colors": ["purple", "green"] },
+            { "text": "belut", "syllables": ["be", "lut"], "colors": ["purple", "green"] },
+            { "text": "sawah", "syllables": ["sa", "wah"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "perut", "syllables": ["pe", "rut"], "colors": ["purple", "green"] },
+            { "text": "ibu", "syllables": ["i", "bu"], "colors": ["purple", "green"] },
+            { "text": "besar", "syllables": ["be", "sar"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "jaket", "syllables": ["ja", "ket"], "colors": ["purple", "green"] },
+            { "text": "kakak", "syllables": ["ka", "kak"], "colors": ["purple", "green"] },
+            { "text": "tebal", "syllables": ["te", "bal"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "remot", "syllables": ["re", "mot"], "colors": ["purple", "green"] },
+            { "text": "mobil", "syllables": ["mo", "bil"], "colors": ["purple", "green"] },
+            { "text": "di", "syllables": ["di"], "colors": ["purple"] },
+            { "text": "meja", "syllables": ["me", "ja"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "pilot", "syllables": ["pi", "lot"], "colors": ["purple", "green"] },
+            { "text": "pesawat", "syllables": ["pe", "sa", "wat"], "colors": ["purple", "purple", "green"] },
+            { "text": "jet", "syllables": ["jet"], "colors": ["purple"] }
           ]
         ]
       }

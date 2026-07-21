@@ -18,7 +18,7 @@ class Chapter {
       id: json['id'] as String,
       chapterNumber: json['chapter_number'] as int,
       title: json['title'] as String,
-      description: json['description'] as String,
+      description: (json['description'] as String?) ?? '',
       pages: (json['pages'] as List<dynamic>)
           .map((p) => ChapterPage.fromJson(p as Map<String, dynamic>))
           .toList(),
@@ -47,7 +47,7 @@ class ChapterPage {
 
     return ChapterPage(
       pageNumber: json['page_number'] as int,
-      pageAudio: json['page_audio'] as String,
+      pageAudio: (json['page_audio'] as String?) ?? '',
       rows: parsedRows,
     );
   }
@@ -73,7 +73,7 @@ class WordItem {
       colors: json['colors'] != null
           ? (json['colors'] as List<dynamic>).map((c) => c as String).toList()
           : null,
-      audio: json['audio'] as String,
+      audio: (json['audio'] as String?) ?? '',
     );
   }
 }
