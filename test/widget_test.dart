@@ -16,6 +16,6 @@ void main() {
     expect(find.byType(SplashScreen), findsOneWidget);
 
     // Biarkan timer splash screen selesai berjalan
-    await tester.pumpAndSettle(const Duration(seconds: 3));
+    await tester.pump(const Duration(seconds: 3));
   });
 }

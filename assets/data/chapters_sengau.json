@@ -1,0 +1,70 @@
+[
+  {
+    "id": "chapter_sengau_1",
+    "chapter_number": 1,
+    "title": "a-ang",
+    "description": "Mengenal akhiran ang",
+    "pages": [
+      {
+        "page_number": 1,
+        "page_audio": "assets/audio/chapters/cs1_p1.mp3",
+        "rows": [
+          [
+            { "text": "a-ang", "syllables": ["a", "-", "ang"], "colors": ["red", "dark", "red"], "audio": "assets/audio/words/a_ang.mp3" }
+          ],
+          [
+            { "text": "ba", "syllables": ["ba"], "colors": ["red"], "audio": "assets/audio/words/ba.mp3" },
+            { "text": "bang", "syllables": ["bang"], "colors": ["dark"], "audio": "assets/audio/words/bang.mp3" },
+            { "text": "lubang", "syllables": ["lu", "bang"], "colors": ["red", "dark"], "audio": "assets/audio/words/lubang.mp3" }
+          ],
+          [
+            { "text": "ca", "syllables": ["ca"], "colors": ["red"], "audio": "assets/audio/words/ca.mp3" },
+            { "text": "cang", "syllables": ["cang"], "colors": ["dark"], "audio": "assets/audio/words/cang.mp3" },
+            { "text": "kacang", "syllables": ["ka", "cang"], "colors": ["red", "dark"], "audio": "assets/audio/words/kacang.mp3" }
+          ],
+          [
+            { "text": "da", "syllables": ["da"], "colors": ["red"], "audio": "assets/audio/words/da.mp3" },
+            { "text": "dang", "syllables": ["dang"], "colors": ["dark"], "audio": "assets/audio/words/dang.mp3" },
+            { "text": "udang", "syllables": ["u", "dang"], "colors": ["red", "dark"], "audio": "assets/audio/words/udang.mp3" }
+          ],
+          [
+            { "text": "ga", "syllables": ["ga"], "colors": ["red"], "audio": "assets/audio/words/ga.mp3" },
+            { "text": "gang", "syllables": ["gang"], "colors": ["dark"], "audio": "assets/audio/words/gang.mp3" },
+            { "text": "pegang", "syllables": ["pe", "gang"], "colors": ["red", "dark"], "audio": "assets/audio/words/pegang.mp3" }
+          ],
+          [
+            { "text": "pa", "syllables": ["pa"], "colors": ["red"], "audio": "assets/audio/words/pa.mp3" },
+            { "text": "pang", "syllables": ["pang"], "colors": ["dark"], "audio": "assets/audio/words/pang.mp3" },
+            { "text": "Jepang", "syllables": ["Je", "pang"], "colors": ["red", "dark"], "audio": "assets/audio/words/jepang.mp3" }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "page_audio": "assets/audio/chapters/cs1_p2.mp3",
+        "rows": [
+          [
+            { "text": "budi", "syllables": ["bu", "di"], "colors": ["purple", "green"], "audio": "assets/audio/words/budi.mp3" },
+            { "text": "makan", "syllables": ["ma", "kan"], "colors": ["purple", "green"], "audio": "assets/audio/words/makan.mp3" },
+            { "text": "kacang", "syllables": ["ka", "cang"], "colors": ["purple", "green"], "audio": "assets/audio/words/kacang.mp3" }
+          ],
+          [
+            { "text": "ayah", "syllables": ["a", "yah"], "colors": ["purple", "green"], "audio": "assets/audio/words/ayah.mp3" },
+            { "text": "tangkap", "syllables": ["tang", "kap"], "colors": ["purple", "green"], "audio": "assets/audio/words/tangkap.mp3" },
+            { "text": "udang", "syllables": ["u", "dang"], "colors": ["purple", "green"], "audio": "assets/audio/words/udang.mp3" }
+          ],
+          [
+            { "text": "jangan", "syllables": ["ja", "ngan"], "colors": ["purple", "green"], "audio": "assets/audio/words/jangan.mp3" },
+            { "text": "masuk", "syllables": ["ma", "suk"], "colors": ["purple", "green"], "audio": "assets/audio/words/masuk.mp3" },
+            { "text": "lubang", "syllables": ["lu", "bang"], "colors": ["purple", "green"], "audio": "assets/audio/words/lubang.mp3" }
+          ],
+          [
+            { "text": "adik", "syllables": ["a", "dik"], "colors": ["purple", "green"], "audio": "assets/audio/words/adik.mp3" },
+            { "text": "suka", "syllables": ["su", "ka"], "colors": ["purple", "green"], "audio": "assets/audio/words/suka.mp3" },
+            { "text": "terbang", "syllables": ["ter", "bang"], "colors": ["purple", "green"], "audio": "assets/audio/words/terbang.mp3" }
+          ]
+        ]
+      }
+    ]
+  }
+]

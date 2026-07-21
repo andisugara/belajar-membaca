@@ -6,13 +6,16 @@ import '../models/chapter_model.dart';
 import '../services/audio_service.dart';
 import '../services/progress_service.dart';
 import '../widgets/word_bubble.dart';
+import 'music_guide_screen.dart';
 
 class ReadingScreen extends StatefulWidget {
+  final ReadingType type;
   final String? initialChapterId;
   final int? initialPageIndex;
 
   const ReadingScreen({
     super.key,
+    this.type = ReadingType.konsonan,
     this.initialChapterId,
     this.initialPageIndex,
   });
@@ -40,7 +43,9 @@ class _ReadingScreenState extends State<ReadingScreen> {
   List<FlatPageItem> _flatPages = [];
   bool _isLoading = true;
   int _currentPageIndex = 0;
-  bool _isMarkedAsLastRead = false;
+
+  // Audio Control States
+  bool _isMuted = false;
 
   @override
   void initState() {
@@ -50,7 +55,10 @@ class _ReadingScreenState extends State<ReadingScreen> {
 
   Future<void> _loadData() async {
     try {
-      final jsonString = await rootBundle.loadString('assets/data/chapters.json');
+      final jsonAsset = widget.type == ReadingType.sengau
+          ? 'assets/data/chapters_sengau.json'
+          : 'assets/data/chapters_konsonan.json';
+      final jsonString = await rootBundle.loadString(jsonAsset);
       final List<dynamic> jsonList = json.decode(jsonString) as List<dynamic>;
       final List<Chapter> chapters = jsonList.map((item) => Chapter.fromJson(item as Map<String, dynamic>)).toList();
       
@@ -77,21 +85,9 @@ class _ReadingScreenState extends State<ReadingScreen> {
         }
       }
 
-      // Check if current loaded page is saved as progress
-      final savedProgress = await ProgressService.getProgress();
-      bool marked = false;
-      if (savedProgress != null && tempFlatPages.isNotEmpty) {
-        final currentFlatPage = tempFlatPages[startPageIndex];
-        if (currentFlatPage.chapter.id == savedProgress['chapterId'] &&
-            currentFlatPage.pageIndexInChapter == savedProgress['pageIndex']) {
-          marked = true;
-        }
-      }
-
       setState(() {
         _flatPages = tempFlatPages;
         _currentPageIndex = startPageIndex;
-        _isMarkedAsLastRead = marked;
         _pageController = PageController(initialPage: startPageIndex);
         _isLoading = false;
       });
@@ -106,53 +102,27 @@ class _ReadingScreenState extends State<ReadingScreen> {
   @override
   void dispose() {
     _pageController.dispose();
-    _audioService.stop();
+    _audioService.dispose();
     super.dispose();
   }
 
   Future<void> _onPageChanged(int index) async {
-    // Stop any running page audio when switching pages
-    await _audioService.stop();
-
-    final savedProgress = await ProgressService.getProgress();
     final currentFlatPage = _flatPages[index];
-    bool marked = false;
-    if (savedProgress != null) {
-      if (currentFlatPage.chapter.id == savedProgress['chapterId'] &&
-          currentFlatPage.pageIndexInChapter == savedProgress['pageIndex']) {
-        marked = true;
-      }
-    }
+    await ProgressService.saveProgress(
+      currentFlatPage.chapter.id,
+      currentFlatPage.pageIndexInChapter,
+    );
 
     setState(() {
       _currentPageIndex = index;
-      _isMarkedAsLastRead = marked;
     });
   }
 
-  Future<void> _toggleLastReadMark(bool? checked) async {
-    if (checked == null) return;
-    
-    final currentFlatPage = _flatPages[_currentPageIndex];
-    if (checked) {
-      await ProgressService.saveProgress(
-        currentFlatPage.chapter.id,
-        currentFlatPage.pageIndexInChapter,
-      );
-      setState(() {
-        _isMarkedAsLastRead = true;
-      });
-    } else {
-      await ProgressService.clearProgress();
-      setState(() {
-        _isMarkedAsLastRead = false;
-      });
-    }
-  }
-
-  Future<void> _playCurrentPageAudio() async {
-    final currentFlatPage = _flatPages[_currentPageIndex];
-    await _audioService.playAsset(currentFlatPage.page.pageAudio);
+  void _toggleMute() {
+    setState(() {
+      _isMuted = !_isMuted;
+      _audioService.isMuted = _isMuted;
+    });
   }
 
   @override
@@ -165,295 +135,289 @@ class _ReadingScreenState extends State<ReadingScreen> {
 
     if (_flatPages.isEmpty) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Belajar Membaca')),
-        body: const Center(
-          child: Text('Data belajar kosong atau gagal dimuat.'),
+        body: Center(
+          child: Text(
+            'Data belajar kosong atau gagal dimuat.',
+            style: GoogleFonts.fredoka(fontSize: 20),
+          ),
         ),
       );
     }
 
     final currentPageItem = _flatPages[_currentPageIndex];
     final chapter = currentPageItem.chapter;
-    final page = currentPageItem.page;
 
     return Scaffold(
-      backgroundColor: Colors.grey.shade50, // clean background matching screenshot
-      body: Stack(
-        children: [
-          // HEADER (Custom AppBar style to match the screenshot)
-          Positioned(
-            top: 0,
-            left: 0,
-            right: 0,
-            child: SafeArea(
-              bottom: false,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // Back button (red circle)
-                    GestureDetector(
-                      onTap: () => Navigator.of(context).pop(),
-                      child: Container(
-                        padding: const EdgeInsets.all(8),
-                        decoration: BoxDecoration(
-                          color: Colors.red.shade400,
-                          shape: BoxShape.circle,
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.red.shade900.withOpacity(0.2),
-                              offset: const Offset(0, 4),
-                              blurRadius: 0,
-                            ),
-                          ],
-                        ),
-                        child: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white, size: 22),
-                      ),
-                    ),
-                    const SizedBox(width: 12),
-                    
-                    // Chapter badge & Subtitle
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+      backgroundColor: Colors.white, // Clean white background as in the screenshot
+      body: OrientationBuilder(
+        builder: (context, orientation) {
+          final isLandscape = orientation == Orientation.landscape;
+          
+          final double titleFontSize = isLandscape ? 54.0 : 36.0;
+          final double gridFontSize = isLandscape ? 36.0 : 26.0;
+          final double horizontalPadding = isLandscape ? 80.0 : 24.0;
+          
+          return Stack(
+            children: [
+              // MAIN LAYOUT
+              Column(
+                children: [
+                  // HEADER BAR
+                  SafeArea(
+                    bottom: false,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 4.0, bottom: 2.0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Row(
-                            children: [
-                              // Chapter badge (orange card)
-                              Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                                decoration: BoxDecoration(
-                                  color: Colors.orange.shade600,
-                                  borderRadius: BorderRadius.circular(16),
-                                ),
-                                child: Row(
-                                  children: [
-                                    const Icon(Icons.circle, color: Colors.yellow, size: 10),
-                                    const SizedBox(width: 6),
-                                    Text(
-                                      'Chapter  ',
-                                      style: GoogleFonts.fredoka(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.w600,
-                                        fontSize: 14,
-                                      ),
-                                    ),
-                                    Container(
-                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                      decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        borderRadius: BorderRadius.circular(8),
-                                      ),
-                                      child: Text(
-                                        '${chapter.chapterNumber}',
-                                        style: GoogleFonts.fredoka(
-                                          color: Colors.orange.shade800,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 14,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(width: 10),
-                              
-                              // Suara Button (Green)
-                              GestureDetector(
-                                onTap: _playCurrentPageAudio,
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
-                                  decoration: BoxDecoration(
-                                    color: Colors.green.shade500,
-                                    borderRadius: BorderRadius.circular(16),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.green.shade700,
-                                        offset: const Offset(0, 3),
-                                        blurRadius: 0,
-                                      ),
-                                    ],
+                          // Back button (red circle)
+                          GestureDetector(
+                            onTap: () => Navigator.of(context).pop(),
+                            child: Container(
+                              padding: const EdgeInsets.all(8),
+                              decoration: BoxDecoration(
+                                color: Colors.red.shade400,
+                                shape: BoxShape.circle,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.red.shade900.withOpacity(0.2),
+                                    offset: const Offset(0, 4),
+                                    blurRadius: 0,
                                   ),
-                                  child: Row(
-                                    children: [
-                                      const Icon(Icons.volume_up, color: Colors.white, size: 18),
-                                      const SizedBox(width: 6),
-                                      Text(
-                                        'Suara',
-                                        style: GoogleFonts.fredoka(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 14,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
+                                ],
                               ),
-                            ],
+                              child: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white, size: 18),
+                            ),
                           ),
-                          const SizedBox(height: 4),
-                          // Subtitle description text
-                          Text(
-                            chapter.description,
-                            style: GoogleFonts.fredoka(
-                              color: Colors.grey.shade500,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
+                          const SizedBox(width: 10),
+                          
+                          // Chapter title badge (orange card)
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+                            decoration: BoxDecoration(
+                              color: Colors.orange.shade600,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Icon(Icons.circle, color: Colors.yellow, size: 10),
+                                const SizedBox(width: 6),
+                                Text(
+                                  chapter.title.isNotEmpty ? chapter.title : 'Chapter ${chapter.chapterNumber}',
+                                  style: GoogleFonts.fredoka(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          
+                          // Toggle Suara Button (Green / Muted Gray)
+                          GestureDetector(
+                            onTap: _toggleMute,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: _isMuted ? Colors.grey.shade400 : Colors.green.shade500,
+                                borderRadius: BorderRadius.circular(16),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: _isMuted ? Colors.grey.shade600 : Colors.green.shade700,
+                                    offset: const Offset(0, 3),
+                                    blurRadius: 0,
+                                  ),
+                                ],
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Icon(_isMuted ? Icons.volume_off : Icons.volume_up, color: Colors.white, size: 18),
+                                  const SizedBox(width: 4),
+                                  Text(
+                                    _isMuted ? 'Mute' : 'Suara',
+                                    style: GoogleFonts.fredoka(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          
+                          const Spacer(),
+
+                          // Page Indicator Box
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                            decoration: BoxDecoration(
+                              color: Colors.blue.shade400,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Icon(Icons.assignment_rounded, color: Colors.white, size: 14),
+                                const SizedBox(width: 4),
+                                Text(
+                                  '${_currentPageIndex + 1}/${_flatPages.length}',
+                                  style: GoogleFonts.fredoka(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 13,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ],
                       ),
                     ),
-
-                    // Right Side items: Last Read Checkbox & Page Badge
-                    Row(
-                      children: [
-                        // Checkbox last read
-                        Checkbox(
-                          value: _isMarkedAsLastRead,
-                          activeColor: Colors.blue,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-                          onChanged: _toggleLastReadMark,
-                        ),
-                        Text(
-                          'Tandai terakhir dibaca',
-                          style: GoogleFonts.fredoka(
-                            color: Colors.grey.shade500,
-                            fontSize: 13,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                        const SizedBox(width: 16),
+                  ),
+                  
+                  // GRID CONTENT
+                  Expanded(
+                    child: PageView.builder(
+                      controller: _pageController,
+                      onPageChanged: _onPageChanged,
+                      itemCount: _flatPages.length,
+                      itemBuilder: (context, idx) {
+                        final pageItem = _flatPages[idx];
                         
-                        // Page Badge (Blue Box)
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                          decoration: BoxDecoration(
-                            color: Colors.blue.shade400,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: Row(
-                            children: [
-                              const Icon(Icons.assignment_rounded, color: Colors.white, size: 18),
-                              const SizedBox(width: 6),
-                              Text(
-                                '${_currentPageIndex + 1}/${_flatPages.length}',
-                                style: GoogleFonts.fredoka(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 14,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-
-          // MIDDLE CONTENT (Word Syllables grid view)
-          Positioned.fill(
-            top: 75,
-            bottom: 40,
-            child: PageView.builder(
-              controller: _pageController,
-              onPageChanged: _onPageChanged,
-              itemCount: _flatPages.length,
-              itemBuilder: (context, idx) {
-                final pageItem = _flatPages[idx];
-                return Center(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: pageItem.page.rows.map((row) {
                         return Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 6.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: row.map((word) {
-                              return WordBubble(
-                                item: word,
-                                onTap: () {
-                                  _audioService.playAsset(word.audio);
-                                },
-                              );
-                            }).toList(),
+                          padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+                          child: Center(
+                            child: SingleChildScrollView(
+                              padding: const EdgeInsets.symmetric(vertical: 16.0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: List.generate(pageItem.page.rows.length, (r) {
+                                  final row = pageItem.page.rows[r];
+                                  final isFirstRow = r == 0;
+                                  
+                                  return Padding(
+                                    padding: EdgeInsets.symmetric(vertical: isFirstRow ? 12.0 : 6.0),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: List.generate(row.length, (c) {
+                                        final word = row[c];
+                                        
+                                        return WordBubble(
+                                          item: word,
+                                          fontSize: isFirstRow ? titleFontSize : gridFontSize,
+                                          isHighlighted: false,
+                                          onTap: () {
+                                            if (!_isMuted) {
+                                              _audioService.playAsset(word.audio);
+                                            }
+                                          },
+                                        );
+                                      }),
+                                    ),
+                                  );
+                                }),
+                              ),
+                            ),
                           ),
                         );
-                      }).toList(),
+                      },
                     ),
                   ),
-                );
-              },
-            ),
-          ),
 
-          // PREVIOUS PAGE BUTTON (Bottom Left)
-          if (_currentPageIndex > 0)
-            Positioned(
-              bottom: 20,
-              left: 20,
-              child: GestureDetector(
-                onTap: () {
-                  _pageController.previousPage(
-                    duration: const Duration(milliseconds: 300),
-                    curve: Curves.easeInOut,
-                  );
-                },
-                child: Container(
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: Colors.grey.shade400,
-                    shape: BoxShape.circle,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.15),
-                        offset: const Offset(0, 4),
-                        blurRadius: 4,
+                  // PORTRAIT NAVIGATION (At the bottom, so it doesn't overlap text)
+                  if (!isLandscape)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 24.0, left: 24.0, right: 24.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          _buildPrevButton(),
+                          _buildNextButton(),
+                        ],
                       ),
-                    ],
-                  ),
-                  child: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white, size: 28),
-                ),
+                    )
+                  else
+                    const SizedBox(height: 20), // Bottom padding in landscape
+                ],
               ),
-            ),
 
-          // NEXT PAGE BUTTON (Bottom Right)
-          if (_currentPageIndex < _flatPages.length - 1)
-            Positioned(
-              bottom: 20,
-              right: 20,
-              child: GestureDetector(
-                onTap: () {
-                  _pageController.nextPage(
-                    duration: const Duration(milliseconds: 300),
-                    curve: Curves.easeInOut,
-                  );
-                },
-                child: Container(
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                    color: Colors.blue.shade400,
-                    shape: BoxShape.circle,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.blue.shade900.withOpacity(0.2),
-                        offset: const Offset(0, 6),
-                        blurRadius: 0,
-                      ),
-                    ],
+              // LANDSCAPE NAVIGATION (Floating in the bottom corners)
+              if (isLandscape) ...[
+                if (_currentPageIndex > 0)
+                  Positioned(
+                    bottom: 20,
+                    left: 20,
+                    child: _buildPrevButton(),
                   ),
-                  child: const Icon(Icons.arrow_forward_ios_rounded, color: Colors.white, size: 28),
-                ),
-              ),
+                if (_currentPageIndex < _flatPages.length - 1)
+                  Positioned(
+                    bottom: 20,
+                    right: 20,
+                    child: _buildNextButton(),
+                  ),
+              ],
+            ],
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _buildPrevButton() {
+    if (_currentPageIndex == 0) return const SizedBox(width: 52); // Keep width for balance in portrait row
+    return GestureDetector(
+      onTap: () {
+        _pageController.previousPage(
+          duration: const Duration(milliseconds: 300),
+          curve: Curves.easeInOut,
+        );
+      },
+      child: Container(
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: Colors.grey.shade400,
+          shape: BoxShape.circle,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.1),
+              offset: const Offset(0, 4),
+              blurRadius: 4,
             ),
-        ],
+          ],
+        ),
+        child: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white, size: 24),
+      ),
+    );
+  }
+
+  Widget _buildNextButton() {
+    if (_currentPageIndex == _flatPages.length - 1) return const SizedBox(width: 52);
+    return GestureDetector(
+      onTap: () {
+        _pageController.nextPage(
+          duration: const Duration(milliseconds: 300),
+          curve: Curves.easeInOut,
+        );
+      },
+      child: Container(
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: Colors.blue.shade400,
+          shape: BoxShape.circle,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.blue.shade900.withOpacity(0.2),
+              offset: const Offset(0, 5),
+              blurRadius: 0,
+            ),
+          ],
+        ),
+        child: const Icon(Icons.arrow_forward_ios_rounded, color: Colors.white, size: 24),
       ),
     );
   }

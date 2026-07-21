@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../services/progress_service.dart';
-import 'reading_screen.dart';
+import 'music_guide_screen.dart';
 import 'practice_screen.dart';
 import 'quiz_screen.dart';
 
@@ -13,32 +13,166 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  Map<String, dynamic>? _lastProgress;
-
-  @override
-  void initState() {
-    super.initState();
-    _loadProgress();
-  }
-
-  Future<void> _loadProgress() async {
-    final progress = await ProgressService.getProgress();
-    if (mounted) {
-      setState(() {
-        _lastProgress = progress;
-      });
-    }
-  }
 
   void _navigateToReading({String? startChapterId, int? startPageIndex}) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) => ReadingScreen(
-          initialChapterId: startChapterId,
-          initialPageIndex: startPageIndex,
+    _showTypeSelectionModal(startChapterId: startChapterId, startPageIndex: startPageIndex);
+  }
+
+  void _showTypeSelectionModal({String? startChapterId, int? startPageIndex}) {
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      isScrollControlled: true,
+      builder: (context) {
+        return SafeArea(
+          child: Padding(
+            padding: EdgeInsets.only(
+              bottom: MediaQuery.of(context).viewInsets.bottom,
+            ),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Container(
+                    width: 40,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade300,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    'Pilih Panduan Belajar',
+                    style: GoogleFonts.fredoka(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.grey.shade800,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    'Pilih kategori untuk mendengarkan lagu panduan',
+                    style: GoogleFonts.fredoka(
+                      fontSize: 12,
+                      color: Colors.grey.shade600,
+                    ),
+                  ),
+                  const SizedBox(height: 14),
+
+                  // 1. KONSONAN Option
+                  _buildTypeCard(
+                    title: '1. Konsonan',
+                    subtitle: 'Panduan membaca abjad konsonan',
+                    icon: Icons.music_note_rounded,
+                    color: Colors.orange.shade500,
+                    onTap: () {
+                      Navigator.of(context).pop();
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => MusicGuideScreen(
+                            type: ReadingType.konsonan,
+                            initialChapterId: startChapterId,
+                            initialPageIndex: startPageIndex,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(height: 10),
+
+                  // 2. SENGAU Option
+                  _buildTypeCard(
+                    title: '2. Sengau',
+                    subtitle: 'Panduan membaca abjad sengau',
+                    icon: Icons.graphic_eq_rounded,
+                    color: Colors.purple.shade400,
+                    onTap: () {
+                      Navigator.of(context).pop();
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => MusicGuideScreen(
+                            type: ReadingType.sengau,
+                            initialChapterId: startChapterId,
+                            initialPageIndex: startPageIndex,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(height: 8),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildTypeCard({
+    required String title,
+    required String subtitle,
+    required IconData icon,
+    required Color color,
+    required VoidCallback onTap,
+  }) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(color: color.withOpacity(0.4), width: 2.5),
+          boxShadow: [
+            BoxShadow(
+              color: color.withOpacity(0.12),
+              offset: const Offset(0, 4),
+              blurRadius: 6,
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            CircleAvatar(
+              radius: 20,
+              backgroundColor: color,
+              child: Icon(icon, color: Colors.white, size: 20),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: GoogleFonts.fredoka(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.grey.shade800,
+                    ),
+                  ),
+                  Text(
+                    subtitle,
+                    style: GoogleFonts.fredoka(
+                      fontSize: 12,
+                      color: Colors.grey.shade500,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Icon(Icons.arrow_forward_ios_rounded, color: color, size: 16),
+          ],
         ),
       ),
-    ).then((_) => _loadProgress()); // Refresh progress when returning
+    );
   }
 
   void _navigateToPractice() {
@@ -99,17 +233,10 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             
-            // Clouds
-            Positioned(
-              top: 30,
-              left: 40,
-              child: Icon(Icons.cloud, size: 60, color: Colors.white.withOpacity(0.9)),
-            ),
-            Positioned(
-              top: 50,
-              right: 80,
-              child: Icon(Icons.cloud, size: 80, color: Colors.white.withOpacity(0.8)),
-            ),
+            // Floating Clouds
+            const FloatingCloud(top: 30, size: 70, opacity: 0.8, duration: Duration(seconds: 40)),
+            const FloatingCloud(top: 80, size: 100, opacity: 0.6, duration: Duration(seconds: 60)),
+            const FloatingCloud(top: 50, size: 60, opacity: 0.7, duration: Duration(seconds: 30)),
 
             // Main Content Area
             SafeArea(
@@ -150,7 +277,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           tooltip: 'Reset Progress Membaca',
                           onPressed: () async {
                             await ProgressService.clearProgress();
-                            _loadProgress();
                             if (mounted) {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(content: Text('Progress belajar telah di-reset!')),
@@ -203,50 +329,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                     ),
-                    
-                    // Resume Progress Banner (if exists)
-                    if (_lastProgress != null)
-                      Padding(
-                        padding: const EdgeInsets.only(top: 12),
-                        child: GestureDetector(
-                          onTap: () {
-                            _navigateToReading(
-                              startChapterId: _lastProgress!['chapterId'] as String,
-                              startPageIndex: _lastProgress!['pageIndex'] as int,
-                            );
-                          },
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
-                            decoration: BoxDecoration(
-                              color: Colors.yellow.shade100,
-                              borderRadius: BorderRadius.circular(30),
-                              border: Border.all(color: Colors.yellow.shade800, width: 2),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.black.withOpacity(0.05),
-                                  offset: const Offset(0, 4),
-                                  blurRadius: 4,
-                                ),
-                              ],
-                            ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Icon(Icons.play_arrow_rounded, color: Colors.orange.shade800),
-                                const SizedBox(width: 8),
-                                Text(
-                                  'Lanjutkan Belajar Terakhir Anda',
-                                  style: GoogleFonts.fredoka(
-                                    color: Colors.orange.shade900,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
                   ],
                 ),
               ),
@@ -340,6 +422,69 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
+    );
+  }
+}
+
+class FloatingCloud extends StatefulWidget {
+  final double top;
+  final double size;
+  final double opacity;
+  final Duration duration;
+
+  const FloatingCloud({
+    super.key,
+    required this.top,
+    required this.size,
+    required this.opacity,
+    required this.duration,
+  });
+
+  @override
+  State<FloatingCloud> createState() => _FloatingCloudState();
+}
+
+class _FloatingCloudState extends State<FloatingCloud> with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _animation;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: widget.duration,
+    )..repeat();
+
+    _animation = Tween<double>(begin: -1.2, end: 1.2).animate(_controller);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    return AnimatedBuilder(
+      animation: _animation,
+      builder: (context, child) {
+        double left = screenWidth * ((_animation.value + 1) / 2) - widget.size;
+        return Positioned(
+          top: widget.top,
+          left: left,
+          child: Opacity(
+            opacity: widget.opacity,
+            child: Icon(
+              Icons.cloud,
+              size: widget.size,
+              color: Colors.white,
+            ),
+          ),
+        );
+      },
     );
   }
 }

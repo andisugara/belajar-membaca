@@ -56,11 +56,13 @@ class ChapterPage {
 class WordItem {
   final String text;
   final List<String> syllables;
+  final List<String>? colors;
   final String audio;
 
   WordItem({
     required this.text,
     required this.syllables,
+    this.colors,
     required this.audio,
   });
 
@@ -68,6 +70,9 @@ class WordItem {
     return WordItem(
       text: json['text'] as String,
       syllables: (json['syllables'] as List<dynamic>).map((s) => s as String).toList(),
+      colors: json['colors'] != null
+          ? (json['colors'] as List<dynamic>).map((c) => c as String).toList()
+          : null,
       audio: json['audio'] as String,
     );
   }
