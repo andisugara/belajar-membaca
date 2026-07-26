@@ -313,7 +313,16 @@ class _ReadingScreenState extends State<ReadingScreen> {
                                           isHighlighted: false,
                                           onTap: () {
                                             if (!_isMuted) {
-                                              _audioService.playAsset(word.audio);
+                                              String audioPath = word.audio;
+                                              if (audioPath.isEmpty) {
+                                                final typeStr = widget.type == ReadingType.konsonan ? 'Konsonan' : 'Sengau';
+                                                final folderName = (widget.type == ReadingType.konsonan && pageItem.chapter.chapterNumber == 11)
+                                                    ? 'Halaman 11'
+                                                    : 'halaman ${pageItem.chapter.chapterNumber}';
+                                                final cleanWord = word.text.trim().toLowerCase();
+                                                audioPath = 'assets/audio/words/$typeStr/$folderName/$cleanWord.mp3';
+                                              }
+                                              _audioService.playAsset(audioPath);
                                             }
                                           },
                                         );

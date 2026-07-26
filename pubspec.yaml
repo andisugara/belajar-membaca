@@ -66,6 +66,26 @@ flutter:
   assets:
     - assets/data/
     - assets/audio/words/
+    - assets/audio/words/Konsonan/halaman 1/
+    - assets/audio/words/Konsonan/halaman 2/
+    - assets/audio/words/Konsonan/halaman 3/
+    - assets/audio/words/Konsonan/halaman 4/
+    - assets/audio/words/Konsonan/halaman 5/
+    - assets/audio/words/Konsonan/halaman 6/
+    - assets/audio/words/Konsonan/halaman 7/
+    - assets/audio/words/Konsonan/halaman 8/
+    - assets/audio/words/Konsonan/halaman 9/
+    - assets/audio/words/Konsonan/halaman 10/
+    - assets/audio/words/Konsonan/Halaman 11/
+    - assets/audio/words/Konsonan/halaman 12/
+    - assets/audio/words/Konsonan/halaman 13/
+    - assets/audio/words/Konsonan/halaman 14/
+    - assets/audio/words/Konsonan/halaman 15/
+    - assets/audio/words/Konsonan/halaman 16/
+    - assets/audio/words/Sengau/halaman 1/
+    - assets/audio/words/Sengau/halaman 2/
+    - assets/audio/words/Sengau/halaman 3/
+    - assets/audio/words/Sengau/halaman 4/
     - assets/audio/chapters/
     - assets/audio/quiz/
     - assets/audio/music/
