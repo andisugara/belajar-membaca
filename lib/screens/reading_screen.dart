@@ -102,7 +102,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
   @override
   void dispose() {
     _pageController.dispose();
-    _audioService.dispose();
+    _audioService.stop();
     super.dispose();
   }
 
