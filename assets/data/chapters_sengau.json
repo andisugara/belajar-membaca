@@ -7,61 +7,358 @@
     "pages": [
       {
         "page_number": 1,
-        "page_audio": "assets/audio/chapters/cs1_p1.mp3",
         "rows": [
           [
-            { "text": "a-ang", "syllables": ["a", "-", "ang"], "colors": ["red", "dark", "red"], "audio": "assets/audio/words/a_ang.mp3" }
+            { "text": "a-ang", "syllables": ["a", "-", "ang"], "colors": ["red", "dark", "red"] }
           ],
           [
-            { "text": "ba", "syllables": ["ba"], "colors": ["red"], "audio": "assets/audio/words/ba.mp3" },
-            { "text": "bang", "syllables": ["bang"], "colors": ["dark"], "audio": "assets/audio/words/bang.mp3" },
-            { "text": "lubang", "syllables": ["lu", "bang"], "colors": ["red", "dark"], "audio": "assets/audio/words/lubang.mp3" }
+            { "text": "ma", "syllables": ["ma"], "colors": ["red"] },
+            { "text": "mang", "syllables": ["mang"], "colors": ["dark"] },
+            { "text": "mangga", "syllables": ["mang", "ga"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "ca", "syllables": ["ca"], "colors": ["red"], "audio": "assets/audio/words/ca.mp3" },
-            { "text": "cang", "syllables": ["cang"], "colors": ["dark"], "audio": "assets/audio/words/cang.mp3" },
-            { "text": "kacang", "syllables": ["ka", "cang"], "colors": ["red", "dark"], "audio": "assets/audio/words/kacang.mp3" }
+            { "text": "ta", "syllables": ["ta"], "colors": ["red"] },
+            { "text": "tang", "syllables": ["tang"], "colors": ["dark"] },
+            { "text": "tangga", "syllables": ["tang", "ga"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "da", "syllables": ["da"], "colors": ["red"], "audio": "assets/audio/words/da.mp3" },
-            { "text": "dang", "syllables": ["dang"], "colors": ["dark"], "audio": "assets/audio/words/dang.mp3" },
-            { "text": "udang", "syllables": ["u", "dang"], "colors": ["red", "dark"], "audio": "assets/audio/words/udang.mp3" }
+            { "text": "ba", "syllables": ["ba"], "colors": ["red"] },
+            { "text": "bang", "syllables": ["bang"], "colors": ["dark"] },
+            { "text": "bangsa", "syllables": ["bang", "sa"], "colors": ["red", "dark"] }
           ],
           [
-            { "text": "ga", "syllables": ["ga"], "colors": ["red"], "audio": "assets/audio/words/ga.mp3" },
-            { "text": "gang", "syllables": ["gang"], "colors": ["dark"], "audio": "assets/audio/words/gang.mp3" },
-            { "text": "pegang", "syllables": ["pe", "gang"], "colors": ["red", "dark"], "audio": "assets/audio/words/pegang.mp3" }
+            { "text": "la", "syllables": ["la"], "colors": ["red"] },
+            { "text": "lang", "syllables": ["lang"], "colors": ["dark"] },
+            { "text": "belalang", "syllables": ["be", "la", "lang"], "colors": ["red", "red", "dark"] }
           ],
           [
-            { "text": "pa", "syllables": ["pa"], "colors": ["red"], "audio": "assets/audio/words/pa.mp3" },
-            { "text": "pang", "syllables": ["pang"], "colors": ["dark"], "audio": "assets/audio/words/pang.mp3" },
-            { "text": "Jepang", "syllables": ["Je", "pang"], "colors": ["red", "dark"], "audio": "assets/audio/words/jepang.mp3" }
+            { "text": "ga", "syllables": ["ga"], "colors": ["red"] },
+            { "text": "gang", "syllables": ["gang"], "colors": ["dark"] },
+            { "text": "dagang", "syllables": ["da", "gang"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ra", "syllables": ["ra"], "colors": ["red"] },
+            { "text": "rang", "syllables": ["rang"], "colors": ["dark"] },
+            { "text": "barang", "syllables": ["ba", "rang"], "colors": ["red", "dark"] }
           ]
         ]
       },
       {
         "page_number": 2,
-        "page_audio": "assets/audio/chapters/cs1_p2.mp3",
         "rows": [
           [
-            { "text": "budi", "syllables": ["bu", "di"], "colors": ["purple", "green"], "audio": "assets/audio/words/budi.mp3" },
-            { "text": "makan", "syllables": ["ma", "kan"], "colors": ["purple", "green"], "audio": "assets/audio/words/makan.mp3" },
-            { "text": "kacang", "syllables": ["ka", "cang"], "colors": ["purple", "green"], "audio": "assets/audio/words/kacang.mp3" }
+            { "text": "Indonesia", "syllables": ["In", "do", "ne", "si", "a"], "colors": ["purple", "purple", "purple", "purple", "green"] },
+            { "text": "bangsa", "syllables": ["bang", "sa"], "colors": ["purple", "green"] },
+            { "text": "merdeka", "syllables": ["mer", "de", "ka"], "colors": ["purple", "purple", "green"] }
           ],
           [
-            { "text": "ayah", "syllables": ["a", "yah"], "colors": ["purple", "green"], "audio": "assets/audio/words/ayah.mp3" },
-            { "text": "tangkap", "syllables": ["tang", "kap"], "colors": ["purple", "green"], "audio": "assets/audio/words/tangkap.mp3" },
-            { "text": "udang", "syllables": ["u", "dang"], "colors": ["purple", "green"], "audio": "assets/audio/words/udang.mp3" }
+            { "text": "belalang", "syllables": ["be", "la", "lang"], "colors": ["purple", "purple", "green"] },
+            { "text": "terbang", "syllables": ["ter", "bang"], "colors": ["purple", "green"] },
+            { "text": "jauh", "syllables": ["ja", "uh"], "colors": ["purple", "green"] }
           ],
           [
-            { "text": "jangan", "syllables": ["ja", "ngan"], "colors": ["purple", "green"], "audio": "assets/audio/words/jangan.mp3" },
-            { "text": "masuk", "syllables": ["ma", "suk"], "colors": ["purple", "green"], "audio": "assets/audio/words/masuk.mp3" },
-            { "text": "lubang", "syllables": ["lu", "bang"], "colors": ["purple", "green"], "audio": "assets/audio/words/lubang.mp3" }
+            { "text": "lima", "syllables": ["li", "ma"], "colors": ["purple", "green"] },
+            { "text": "pohon", "syllables": ["po", "hon"], "colors": ["purple", "green"] },
+            { "text": "mangga", "syllables": ["mang", "ga"], "colors": ["purple", "green"] }
           ],
           [
-            { "text": "adik", "syllables": ["a", "dik"], "colors": ["purple", "green"], "audio": "assets/audio/words/adik.mp3" },
-            { "text": "suka", "syllables": ["su", "ka"], "colors": ["purple", "green"], "audio": "assets/audio/words/suka.mp3" },
-            { "text": "terbang", "syllables": ["ter", "bang"], "colors": ["purple", "green"], "audio": "assets/audio/words/terbang.mp3" }
+            { "text": "naik", "syllables": ["na", "ik"], "colors": ["purple", "green"] },
+            { "text": "turun", "syllables": ["tu", "run"], "colors": ["purple", "green"] },
+            { "text": "tangga", "syllables": ["tang", "ga"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "ibu", "syllables": ["i", "bu"], "colors": ["purple", "green"] },
+            { "text": "senang", "syllables": ["se", "nang"], "colors": ["purple", "green"] },
+            { "text": "dagang", "syllables": ["da", "gang"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "mobil", "syllables": ["mo", "bil"], "colors": ["purple", "green"] },
+            { "text": "bawa", "syllables": ["ba", "wa"], "colors": ["purple", "green"] },
+            { "text": "barang", "syllables": ["ba", "rang"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_sengau_2",
+    "chapter_number": 2,
+    "title": "ing-ung-eng-ong",
+    "description": "Mengenal akhiran ing, ung, eng, ong",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "ing-ung-eng-ong", "syllables": ["ing", "-", "ung", "-", "eng", "-", "ong"], "colors": ["red", "dark", "red", "dark", "red", "dark", "red"] }
+          ],
+          [
+            { "text": "li", "syllables": ["li"], "colors": ["red"] },
+            { "text": "ling", "syllables": ["ling"], "colors": ["dark"] },
+            { "text": "guling", "syllables": ["gu", "ling"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ru", "syllables": ["ru"], "colors": ["red"] },
+            { "text": "rung", "syllables": ["rung"], "colors": ["dark"] },
+            { "text": "burung", "syllables": ["bu", "rung"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "ti", "syllables": ["ti"], "colors": ["red"] },
+            { "text": "ting", "syllables": ["ting"], "colors": ["dark"] },
+            { "text": "tinggi", "syllables": ["ting", "gi"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "le", "syllables": ["le"], "colors": ["red"] },
+            { "text": "leng", "syllables": ["leng"], "colors": ["dark"] },
+            { "text": "kaleng", "syllables": ["ka", "leng"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "lo", "syllables": ["lo"], "colors": ["red"] },
+            { "text": "long", "syllables": ["long"], "colors": ["dark"] },
+            { "text": "kalong", "syllables": ["ka", "long"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "di", "syllables": ["di"], "colors": ["red"] },
+            { "text": "ding", "syllables": ["ding"], "colors": ["dark"] },
+            { "text": "puding", "syllables": ["pu", "ding"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "pohon", "syllables": ["po", "hon"], "colors": ["purple", "green"] },
+            { "text": "tinggi", "syllables": ["ting", "gi"], "colors": ["purple", "green"] },
+            { "text": "sekali", "syllables": ["se", "ka", "li"], "colors": ["purple", "purple", "green"] }
+          ],
+          [
+            { "text": "burung", "syllables": ["bu", "rung"], "colors": ["purple", "green"] },
+            { "text": "rajawali", "syllables": ["ra", "ja", "wa", "li"], "colors": ["purple", "purple", "purple", "green"] }
+          ],
+          [
+            { "text": "kaleng", "syllables": ["ka", "leng"], "colors": ["purple", "green"] },
+            { "text": "susu", "syllables": ["su", "su"], "colors": ["purple", "green"] },
+            { "text": "bayi", "syllables": ["ba", "yi"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "di", "syllables": ["di"], "colors": ["purple"] },
+            { "text": "pohon", "syllables": ["po", "hon"], "colors": ["purple", "green"] },
+            { "text": "ada", "syllables": ["a", "da"], "colors": ["purple", "green"] },
+            { "text": "kalong", "syllables": ["ka", "long"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "ada", "syllables": ["a", "da"], "colors": ["purple", "green"] },
+            { "text": "puding", "syllables": ["pu", "ding"], "colors": ["purple", "green"] },
+            { "text": "susu", "syllables": ["su", "su"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "guling", "syllables": ["gu", "ling"], "colors": ["purple", "green"] },
+            { "text": "di", "syllables": ["di"], "colors": ["purple"] },
+            { "text": "atas", "syllables": ["a", "tas"], "colors": ["purple", "green"] },
+            { "text": "kasur", "syllables": ["ka", "sur"], "colors": ["purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_sengau_3",
+    "chapter_number": 3,
+    "title": "nga-ngi-ngu-nge-ngo",
+    "description": "Mengenal awalan suku kata nga, ngi, ngu, nge, ngo",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "nga-ngi-ngu-nge-ngo", "syllables": ["nga", "-", "ngi", "-", "ngu", "-", "nge", "-", "ngo"], "colors": ["red", "dark", "red", "dark", "red", "dark", "red", "dark", "red"] }
+          ],
+          [
+            { "text": "nga-", "syllables": ["nga-"], "colors": ["green"] },
+            { "text": "bunga", "syllables": ["bu", "nga"], "colors": ["red", "dark"] },
+            { "text": "ngaji", "syllables": ["nga", "ji"], "colors": ["red", "dark"] },
+            { "text": "singa", "syllables": ["si", "nga"], "colors": ["red", "dark"] },
+            { "text": "mengapa", "syllables": ["me", "nga", "pa"], "colors": ["red", "red", "dark"] }
+          ],
+          [
+            { "text": "mengatakan", "syllables": ["me", "nga", "ta", "kan"], "colors": ["red", "red", "dark", "dark"] },
+            { "text": "mengantar", "syllables": ["me", "ngan", "tar"], "colors": ["red", "red", "dark"] }
+          ],
+          [
+            { "text": "ngi-", "syllables": ["ngi-"], "colors": ["red"] },
+            { "text": "wangi", "syllables": ["wa", "ngi"], "colors": ["red", "dark"] },
+            { "text": "pelangi", "syllables": ["pe", "la", "ngi"], "colors": ["red", "red", "dark"] },
+            { "text": "mengirim", "syllables": ["me", "ngi", "rim"], "colors": ["red", "red", "dark"] }
+          ],
+          [
+            { "text": "menginap", "syllables": ["me", "ngi", "nap"], "colors": ["red", "red", "dark"] }
+          ],
+          [
+            { "text": "mengikuti", "syllables": ["me", "ngi", "ku", "ti"], "colors": ["red", "red", "dark", "dark"] },
+            { "text": "mengidolakan", "syllables": ["me", "ngi", "do", "la", "kan"], "colors": ["red", "red", "dark", "dark", "dark"] }
+          ],
+          [
+            { "text": "ngu-", "syllables": ["ngu-"], "colors": ["purple"] },
+            { "text": "ungu", "syllables": ["u", "ngu"], "colors": ["red", "dark"] },
+            { "text": "sangu", "syllables": ["sa", "ngu"], "colors": ["red", "dark"] },
+            { "text": "menguji", "syllables": ["me", "ngu", "ji"], "colors": ["red", "red", "dark"] },
+            { "text": "mengukur", "syllables": ["me", "ngu", "kur"], "colors": ["red", "red", "dark"] }
+          ],
+          [
+            { "text": "mengulang", "syllables": ["me", "ngu", "lang"], "colors": ["red", "red", "dark"] },
+            { "text": "mengurusi", "syllables": ["me", "ngu", "ru", "si"], "colors": ["red", "red", "dark", "dark"] }
+          ],
+          [
+            { "text": "nge-", "syllables": ["nge-"], "colors": ["teal"] },
+            { "text": "ngeteh", "syllables": ["nge", "teh"], "colors": ["red", "dark"] },
+            { "text": "ngecek", "syllables": ["nge", "cek"], "colors": ["red", "dark"] },
+            { "text": "mengetahui", "syllables": ["me", "nge", "ta", "hu", "i"], "colors": ["red", "red", "dark", "dark", "dark"] }
+          ],
+          [
+            { "text": "mengembalikan", "syllables": ["me", "ngem", "ba", "li", "kan"], "colors": ["red", "red", "dark", "dark", "dark"] },
+            { "text": "mengerahkan", "syllables": ["me", "nge", "rah", "kan"], "colors": ["red", "red", "dark", "dark"] }
+          ],
+          [
+            { "text": "ngo-", "syllables": ["ngo-"], "colors": ["blue"] },
+            { "text": "bango", "syllables": ["ba", "ngo"], "colors": ["red", "dark"] },
+            { "text": "ngojek", "syllables": ["ngo", "jek"], "colors": ["red", "dark"] },
+            { "text": "mengoreksi", "syllables": ["me", "ngo", "rek", "si"], "colors": ["red", "red", "dark", "dark"] }
+          ],
+          [
+            { "text": "mengoles", "syllables": ["me", "ngo", "les"], "colors": ["red", "red", "dark"] },
+            { "text": "mengobati", "syllables": ["me", "ngo", "ba", "ti"], "colors": ["red", "red", "dark", "dark"] },
+            { "text": "ngopi", "syllables": ["ngo", "pi"], "colors": ["red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "mengapa", "syllables": ["me", "nga", "pa"], "colors": ["purple", "purple", "green"] },
+            { "text": "bunga", "syllables": ["bu", "nga"], "colors": ["purple", "green"] },
+            { "text": "wangi", "syllables": ["wa", "ngi"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "pelangi", "syllables": ["pe", "la", "ngi"], "colors": ["purple", "purple", "green"] },
+            { "text": "tujuh", "syllables": ["tu", "juh"], "colors": ["purple", "green"] },
+            { "text": "warna", "syllables": ["war", "na"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "belajar", "syllables": ["be", "la", "jar"], "colors": ["purple", "purple", "green"] },
+            { "text": "mengukir", "syllables": ["me", "ngu", "kir"], "colors": ["purple", "purple", "green"] },
+            { "text": "batu", "syllables": ["ba", "tu"], "colors": ["purple", "green"] }
+          ],
+          [
+            { "text": "mengembalikan", "syllables": ["me", "ngem", "ba", "li", "kan"], "colors": ["purple", "purple", "purple", "purple", "green"] },
+            { "text": "mainan", "syllables": ["ma", "i", "nan"], "colors": ["purple", "purple", "green"] }
+          ],
+          [
+            { "text": "dokter", "syllables": ["dok", "ter"], "colors": ["purple", "green"] },
+            { "text": "mengobati", "syllables": ["me", "ngo", "ba", "ti"], "colors": ["purple", "purple", "purple", "green"] }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chapter_sengau_4",
+    "chapter_number": 4,
+    "title": "nya-nyi-nyu-nye-nyo",
+    "description": "Mengenal awalan suku kata nya, nyi, nyu, nye, nyo",
+    "pages": [
+      {
+        "page_number": 1,
+        "rows": [
+          [
+            { "text": "nya-nyi-nyu-nye-nyo", "syllables": ["nya", "-", "nyi", "-", "nyu", "-", "nye", "-", "nyo"], "colors": ["red", "dark", "red", "dark", "red", "dark", "red", "dark", "red"] }
+          ],
+          [
+            { "text": "nya-", "syllables": ["nya-"], "colors": ["green"] },
+            { "text": "nyata", "syllables": ["nya", "ta"], "colors": ["red", "dark"] },
+            { "text": "nyala", "syllables": ["nya", "la"], "colors": ["red", "dark"] },
+            { "text": "tanya", "syllables": ["ta", "nya"], "colors": ["red", "dark"] },
+            { "text": "nyamuk", "syllables": ["nya", "muk"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "nyaman", "syllables": ["nya", "man"], "colors": ["red", "dark"] },
+            { "text": "menyapu", "syllables": ["me", "nya", "pu"], "colors": ["red", "red", "dark"] },
+            { "text": "minyak", "syllables": ["mi", "nyak"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "nyi-", "syllables": ["nyi-"], "colors": ["red"] },
+            { "text": "nyanyi", "syllables": ["nya", "nyi"], "colors": ["red", "dark"] },
+            { "text": "sunyi", "syllables": ["su", "nyi"], "colors": ["red", "dark"] },
+            { "text": "bunyi", "syllables": ["bu", "nyi"], "colors": ["red", "dark"] },
+            { "text": "menyiram", "syllables": ["me", "nyi", "ram"], "colors": ["red", "red", "dark"] }
+          ],
+          [
+            { "text": "menyinari", "syllables": ["me", "nyi", "na", "ri"], "colors": ["red", "red", "dark", "dark"] },
+            { "text": "menyisir", "syllables": ["me", "nyi", "sir"], "colors": ["red", "red", "dark"] },
+            { "text": "menyikat", "syllables": ["me", "nyi", "kat"], "colors": ["red", "red", "dark"] }
+          ],
+          [
+            { "text": "nyu-", "syllables": ["nyu-"], "colors": ["purple"] },
+            { "text": "penyu", "syllables": ["pe", "nyu"], "colors": ["red", "dark"] },
+            { "text": "hanyut", "syllables": ["ha", "nyut"], "colors": ["red", "dark"] },
+            { "text": "menyusuri", "syllables": ["me", "nyu", "su", "ri"], "colors": ["red", "red", "dark", "dark"] }
+          ],
+          [
+            { "text": "menyusun", "syllables": ["me", "nyu", "sun"], "colors": ["red", "red", "dark"] },
+            { "text": "menyuluh", "syllables": ["me", "nyu", "luh"], "colors": ["red", "red", "dark"] },
+            { "text": "menyuruh", "syllables": ["me", "nyu", "ruh"], "colors": ["red", "red", "dark"] }
+          ],
+          [
+            { "text": "nye-", "syllables": ["nye-"], "colors": ["teal"] },
+            { "text": "nyeri", "syllables": ["nye", "ri"], "colors": ["red", "dark"] },
+            { "text": "nyenyak", "syllables": ["nye", "nyak"], "colors": ["red", "dark"] },
+            { "text": "menyelam", "syllables": ["me", "nye", "lam"], "colors": ["red", "red", "dark"] }
+          ],
+          [
+            { "text": "menyerap", "syllables": ["me", "nye", "rap"], "colors": ["red", "red", "dark"] },
+            { "text": "menyenangkan", "syllables": ["me", "nye", "nang", "kan"], "colors": ["red", "red", "dark", "dark"] }
+          ],
+          [
+            { "text": "nyo-", "syllables": ["nyo-"], "colors": ["blue"] },
+            { "text": "nyonya", "syllables": ["nyo", "nya"], "colors": ["red", "dark"] },
+            { "text": "nyoman", "syllables": ["nyo", "man"], "colors": ["red", "dark"] },
+            { "text": "bonyok", "syllables": ["bo", "nyok"], "colors": ["red", "dark"] }
+          ],
+          [
+            { "text": "menyobek", "syllables": ["me", "nyo", "bek"], "colors": ["red", "red", "dark"] },
+            { "text": "menyolok", "syllables": ["me", "nyo", "lok"], "colors": ["red", "red", "dark"] },
+            { "text": "menyongsong", "syllables": ["me", "nyong", "song"], "colors": ["red", "red", "dark"] }
+          ]
+        ]
+      },
+      {
+        "page_number": 2,
+        "rows": [
+          [
+            { "text": "nyaman", "syllables": ["nya", "man"], "colors": ["purple", "green"] },
+            { "text": "sekali", "syllables": ["se", "ka", "li"], "colors": ["purple", "purple", "green"] },
+            { "text": "rumahku", "syllables": ["ru", "mah", "ku"], "colors": ["purple", "purple", "green"] }
+          ],
+          [
+            { "text": "matahari", "syllables": ["ma", "ta", "ha", "ri"], "colors": ["purple", "purple", "purple", "green"] },
+            { "text": "menyinari", "syllables": ["me", "nyi", "na", "ri"], "colors": ["purple", "purple", "purple", "green"] },
+            { "text": "pagiku", "syllables": ["pa", "gi", "ku"], "colors": ["purple", "purple", "green"] }
+          ],
+          [
+            { "text": "tugas", "syllables": ["tu", "gas"], "colors": ["purple", "green"] },
+            { "text": "menyusun", "syllables": ["me", "nyu", "sun"], "colors": ["purple", "purple", "green"] },
+            { "text": "kegiatan", "syllables": ["ke", "gi", "a", "tan"], "colors": ["purple", "purple", "purple", "green"] }
+          ],
+          [
+            { "text": "liburan", "syllables": ["li", "bu", "ran"], "colors": ["purple", "purple", "green"] },
+            { "text": "yang", "syllables": ["yang"], "colors": ["purple"] },
+            { "text": "menyenangkan", "syllables": ["me", "nye", "nang", "kan"], "colors": ["purple", "purple", "purple", "green"] }
+          ],
+          [
+            { "text": "menyongsong", "syllables": ["me", "nyong", "song"], "colors": ["purple", "purple", "green"] },
+            { "text": "masa", "syllables": ["ma", "sa"], "colors": ["purple", "green"] },
+            { "text": "depan", "syllables": ["de", "pan"], "colors": ["purple", "green"] }
           ]
         ]
       }
