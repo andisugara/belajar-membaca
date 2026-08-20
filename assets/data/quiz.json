@@ -1,42 +1,162 @@
 [
   {
     "id": "q1",
-    "instruction": "Dengarkan suara ini, lalu tebak kata yang tepat!",
-    "audio": "assets/audio/quiz/q_baba.mp3",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/1_bocah.m4a",
     "options": [
-      { "text": "aba", "is_correct": false },
-      { "text": "baba", "is_correct": true },
-      { "text": "baa", "is_correct": false }
+      { "text": "abah", "is_correct": false },
+      { "text": "bocah", "is_correct": true },
+      { "text": "sawah", "is_correct": false }
     ]
   },
   {
     "id": "q2",
-    "instruction": "Dengarkan suara ini, lalu tebak kata yang tepat!",
-    "audio": "assets/audio/quiz/q_baca.mp3",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/2_keras.m4a",
     "options": [
-      { "text": "caca", "is_correct": false },
-      { "text": "baca", "is_correct": true },
-      { "text": "aba", "is_correct": false }
+      { "text": "keras", "is_correct": true },
+      { "text": "kelas", "is_correct": false },
+      { "text": "tegas", "is_correct": false }
     ]
   },
   {
     "id": "q3",
-    "instruction": "Dengarkan suara ini, lalu tebak kata yang tepat!",
-    "audio": "assets/audio/quiz/q_ada.mp3",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/3_amal.m4a",
     "options": [
-      { "text": "dada", "is_correct": false },
-      { "text": "ada", "is_correct": true },
-      { "text": "da", "is_correct": false }
+      { "text": "tebal", "is_correct": false },
+      { "text": "mahal", "is_correct": false },
+      { "text": "amal", "is_correct": true }
     ]
   },
   {
     "id": "q4",
-    "instruction": "Dengarkan suara ini, lalu tebak kata yang tepat!",
-    "audio": "assets/audio/quiz/q_ababa.mp3",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/4_padam.m4a",
     "options": [
-      { "text": "ababa", "is_correct": true },
-      { "text": "baba", "is_correct": false },
-      { "text": "aba", "is_correct": false }
+      { "text": "padam", "is_correct": true },
+      { "text": "hitam", "is_correct": false },
+      { "text": "paham", "is_correct": false }
+    ]
+  },
+  {
+    "id": "q5",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/5_rindu.m4a",
+    "options": [
+      { "text": "pintu", "is_correct": false },
+      { "text": "rindu", "is_correct": true },
+      { "text": "bambu", "is_correct": false }
+    ]
+  },
+  {
+    "id": "q6",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/6_sabar.m4a",
+    "options": [
+      { "text": "akar", "is_correct": false },
+      { "text": "besar", "is_correct": false },
+      { "text": "sabar", "is_correct": true }
+    ]
+  },
+  {
+    "id": "q7",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/7_bakso.m4a",
+    "options": [
+      { "text": "soto", "is_correct": false },
+      { "text": "sukro", "is_correct": false },
+      { "text": "bakso", "is_correct": true }
+    ]
+  },
+  {
+    "id": "q8",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/8_obat.m4a",
+    "options": [
+      { "text": "obat", "is_correct": true },
+      { "text": "adat", "is_correct": false },
+      { "text": "lalat", "is_correct": false }
+    ]
+  },
+  {
+    "id": "q9",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/9_bangsa.m4a",
+    "options": [
+      { "text": "mangga", "is_correct": false },
+      { "text": "bangsa", "is_correct": true },
+      { "text": "tangga", "is_correct": false }
+    ]
+  },
+  {
+    "id": "q10",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/10_guling.m4a",
+    "options": [
+      { "text": "puding", "is_correct": false },
+      { "text": "tinggi", "is_correct": false },
+      { "text": "guling", "is_correct": true }
+    ]
+  },
+  {
+    "id": "q11",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/11_bunga.m4a",
+    "options": [
+      { "text": "bunga", "is_correct": true },
+      { "text": "singa", "is_correct": false },
+      { "text": "ngaji", "is_correct": false }
+    ]
+  },
+  {
+    "id": "q12",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/12_tanya.m4a",
+    "options": [
+      { "text": "menyapu", "is_correct": false },
+      { "text": "tanya", "is_correct": true },
+      { "text": "nyata", "is_correct": false }
+    ]
+  },
+  {
+    "id": "q13",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/13_bunyi.m4a",
+    "options": [
+      { "text": "nyanyi", "is_correct": false },
+      { "text": "sunyi", "is_correct": false },
+      { "text": "bunyi", "is_correct": true }
+    ]
+  },
+  {
+    "id": "q14",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/14_penyu.m4a",
+    "options": [
+      { "text": "hanyut", "is_correct": false },
+      { "text": "menyusun", "is_correct": false },
+      { "text": "penyu", "is_correct": true }
+    ]
+  },
+  {
+    "id": "q15",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/15_nyeri.m4a",
+    "options": [
+      { "text": "nyeri", "is_correct": true },
+      { "text": "nyenyak", "is_correct": false },
+      { "text": "nyerap", "is_correct": false }
+    ]
+  },
+  {
+    "id": "q16",
+    "instruction": "Dengarkanlah kata berikut, kemudian pilih kata yang tepat sesuai dengan suara tersebut!",
+    "audio": "assets/audio/quiz/16_nyonya.m4a",
+    "options": [
+      { "text": "nyoman", "is_correct": false },
+      { "text": "nyonya", "is_correct": true },
+      { "text": "bonyok", "is_correct": false }
     ]
   }
 ]
